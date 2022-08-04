@@ -2,7 +2,6 @@
 
 library(nflfastR)
 library(tidyverse)
-library(ggplot2)
 library(ggrepel)
 
 ###Load play by play data
@@ -29,21 +28,52 @@ qbstats <-pbp%>%
     points = (.4*attempts)+(-1*incompetions),
     points2 = (.6*completions)+(-1*incompetions),
     points3 = (attempts*-1) + (completions*1.65),
-    pointsround = round(points2,0)
+    pointsround = round(points2,0),
+    Adjustment= if_else(points3>0,"Positive","Negative"),
+    abs_adj=abs(points3)
   )%>%
   filter(attempts>3)
 
+
+avgqbadj<-round(mean(qbstats$points3),2 )
+avgqbcomp<-round(mean(qbstats$comp_pct),2)
+
 ggplot(qbstats,aes(x=points3,y=comp_pct)) +
   geom_point()+
-  geom_hline(yintercept=.6,color="red",linetype="dashed")+
-  geom_vline(xintercept=0,color="red",linetype="dashed")+
-  geom_hline(yintercept=mean(qbstats$comp_pct),color="blue",linetype="solid")+
-  geom_vline(xintercept=mean(qbstats$points3),color="blue",linetype="solid")
+  geom_hline(yintercept=mean(qbstats$comp_pct),color="red",linetype="dashed")+
+  geom_vline(xintercept=avgqbadj,color="blue",linetype="dashed")+
+  ggtitle("Quarterback Points Adjustment 2021")+
+  xlab("Point Adjustment")+
+  ylab("Completion Percentage")+
+  labs(caption= "Made by @BSchiwal, Datasource = @NFLFastr",
+       subtitle="per game")+
+  geom_text(aes(0,avgqbadj ,label=paste("AVG Adj",avgqbadj) ,vjust=0, hjust=1),check_overlap = TRUE)+
+  geom_text(aes(10,avgqbcomp ,label=paste("AVG Comp",avgqbcomp*100,"%"),vjust=-1,hjust=5.5),check_overlap = TRUE)+
+  theme(plot.title=element_text(hjust=.5, face="bold", size=18),
+        plot.subtitle = element_text(hjust=.5,face="italic",size=10))+
+  scale_y_continuous(labels=scales::percent, limits=c(0,1))+
+  scale_x_continuous(limits=c(-25,25))
+  dev.print(file="QBAjustPerGame.png",device=png, height=600,width=800)
+  dev.off()
 
-mean(qbstats$points3)               
+ggplot(qbstats,aes(x=attempts,y=completions))+
+  geom_point(aes(color=Adjustment, size=abs_adj), alpha=.5)+
+  stat_smooth(method="lm",col="red")+
+  geom_text(aes(20,35,label=paste("Average QB Completions =",avgqbcomp*100,"%")),color="red", check_overlap = TRUE)+
+  scale_color_manual(values=c("red3","forestgreen"))+
+  scale_alpha(guide=FALSE)+
+  ggtitle("Quarterback Points Adjustment 2021")+
+  xlab("Pass Attempts")+
+  ylab("Completions")+
+  labs(caption= "Made by @BSchiwal, Datasource = @NFLFastr",
+       size="Points")+
+  theme(plot.title=element_text(hjust=.5, face="bold", size=18))+
+  scale_y_continuous( limits=c(0,65))+
+  scale_x_continuous(limits=c(0,65))
+dev.print(file="QBCompPerGame.png",device=png, height=600,width=800)
+dev.off()
 
-ggplot(qbstats,aes(x=points3,y=comp_pct)) +
-  geom_point()
+
 
 
 ###Analyze WR Stats
@@ -57,26 +87,54 @@ wrstats <-pbp%>%
     target = sum(pass_attempt),
     reception = sum(complete_pass),
     dropped_ball = sum(incomplete_pass),
+    adj = (-.66*target)+(1*reception),
     points = (-.66*target)+(2*reception),
     comp_pct = reception/target,
-    pointsround = round(points,0)
+    pointsround = round(points,0),
+    Adjustment= if_else(adj>0,"Positive","Negative"),
+    abs_adj=abs(adj)
   )%>%
   filter(target>3, receiver_player_name!="NA")
 
-ggplot(wrstats,aes(x=points,y=comp_pct)) +
-  geom_point()+
-  ##geom_hline(yintercept=.6,color="red",linetype="dashed")+
-  geom_vline(xintercept=0,color="red",linetype="dashed")+
-  geom_hline(yintercept=mean(wrstats$comp_pct),color="blue",linetype="solid")+
-  geom_vline(xintercept=mean(wrstats$points),color="blue",linetype="solid")
+avgwradj<-round(mean(wrstats$adj),2 )
+avgwrcomp<-round(mean(wrstats$comp_pct),2)
 
-ggplot(wrstats,aes(x=reception,y=comp_pct)) +
+ggplot(wrstats,aes(x=adj,y=comp_pct)) +
   geom_point()+
-  ##geom_hline(yintercept=.6,color="red",linetype="dashed")+
-  geom_vline(xintercept=0,color="red",linetype="dashed")+
-  geom_hline(yintercept=mean(wrstats$comp_pct),color="blue",linetype="solid")+
-  geom_vline(xintercept=mean(wrstats$points),color="blue",linetype="solid")
+  geom_hline(yintercept=mean(wrstats$comp_pct),color="red",linetype="dashed")+
+  geom_vline(xintercept=avgwradj,color="blue",linetype="dashed")+
+  ggtitle("Reciever Points Adjustment 2021")+
+  xlab("Point Adjustment")+
+  ylab("Completion Percentage When Targeted")+
+  labs(caption= "Made by @BSchiwal, Datasource = @NFLFastr",
+       subtitle="per game")+
+  geom_text(aes(0,avgwradj ,label=paste("AVG Adj",avgwradj) ,vjust=0, hjust=1),check_overlap = TRUE)+
+  geom_text(aes(10,avgwrcomp ,label=paste("AVG Comp",avgwrcomp*100,"%"),vjust=-1,hjust=8),check_overlap = TRUE)+
+  theme(plot.title=element_text(hjust=.5, face="bold", size=18),
+        plot.subtitle = element_text(hjust=.5,face="italic",size=10))+
+  scale_y_continuous(labels=scales::percent, limits=c(0,1))+
+  scale_x_continuous(limits=c(-8,8))
+dev.print(file="WRAjustPerGame.png",device=png, height=600,width=800)
+dev.off()
 
+
+
+ggplot(wrstats,aes(x=target,y=reception))+
+  geom_point(aes(color=Adjustment, size=abs_adj), alpha=.5)+
+  stat_smooth(method="lm",col="red")+
+  geom_text(aes(5,10,label=paste("Average WR Completions =",avgwrcomp*100,"%")),color="red", check_overlap = TRUE)+
+  scale_color_manual(values=c("red3","forestgreen"))+
+  scale_alpha(guide=FALSE)+
+  ggtitle("Receiver Points Adjustment 2021")+
+  xlab("Targets")+
+  ylab("Receptions")+
+  labs(caption= "Made by @BSchiwal, Datasource = @NFLFastr",
+       size="Points")+
+  theme(plot.title=element_text(hjust=.5, face="bold", size=18))+
+  scale_y_continuous( limits=c(0,20))+
+  scale_x_continuous(limits=c(0,20))
+dev.print(file="WRCompPerGame.png",device=png, height=600,width=800)
+dev.off()
 
 mean(wrstats$comp_pct)
 
@@ -95,17 +153,54 @@ rbstats <-pbp%>%
     td = sum(rush_touchdown),
     ydsperattpt = yards/attempt,
     pts = (yards*.21)+(attempt*-.5),
-    pts_adj= (yards*.11)+(attempt*-.5)
+    pts_adj= (yards*.06)+(attempt*-.26),
+    Adjustment= if_else(pts_adj>0,"Positive","Negative"),
+    abs_adj=abs(pts_adj)
   )%>%
   filter(attempt>3, rusher_player_name!="NA")
 
-mean(rbstats$yardsperattpt)
-ypa<-sum(rbstats$yards)/sum(rbstats$attempt)
-ggplot(rbstats,aes(x=pts_adj,y=pts))+geom_point()+
-  geom_hline(yintercept=mean(ypa),color="blue",linetype="solid")+
-  geom_vline(xintercept=mean(rbstats$yards),color="blue",linetype="solid")
+rbypa<-round(sum(rbstats$yards)/sum(rbstats$attempt),2)
+rbavgadj<-round(mean(rbstats$pts_adj),2)
 
-rm(rbstats,wrstats,qbstats)
+ggplot(rbstats,aes(x=pts_adj,y=ydsperattpt)) +
+  geom_point()+
+  geom_hline(yintercept=rbypa,color="red",linetype="dashed")+
+  geom_vline(xintercept=rbavgadj,color="blue",linetype="dashed")+
+  ggtitle("Rusher Points Adjustment 2021")+
+  xlab("Point Adjustment")+
+  ylab("Yards per Attempt")+
+  labs(caption= "Made by @BSchiwal, Datasource = @NFLFastr",
+       subtitle="per game")+
+  geom_text(aes(0,rbavgadj ,label=paste("AVG Adj",rbavgadj) ,vjust=0, hjust=1),check_overlap = TRUE)+
+  geom_text(aes(-3,rbypa ,label=paste("AVG YPA",rbypa),vjust=0,hjust=0),check_overlap = TRUE)+
+  theme(plot.title=element_text(hjust=.5, face="bold", size=18),
+        plot.subtitle = element_text(hjust=.5,face="italic",size=10))+
+  scale_y_continuous(limits=c(-5,25))+
+  scale_x_continuous(limits=c(-5,5))
+dev.print(file="RBAjustPerGame.png",device=png, height=600,width=800)
+dev.off()
+
+
+
+ggplot(rbstats,aes(x=attempt,y=yards))+
+  geom_point(aes(color=Adjustment, size=abs_adj), alpha=.5)+
+  stat_smooth(method="lm",col="red")+
+  geom_text(aes(5,10,label=paste("Average RB Completions =",avgwrcomp*100,"%")),color="red", check_overlap = TRUE)+
+  scale_color_manual(values=c("red3","forestgreen"))+
+  scale_alpha(guide=FALSE)+
+  ggtitle("Rusher Points Adjustment 2021")+
+  xlab("Attempts")+
+  ylab("Yards")+
+  labs(caption= "Made by @BSchiwal, Datasource = @NFLFastr",
+       size="Points")+
+  theme(plot.title=element_text(hjust=.5, face="bold", size=18))+
+  scale_y_continuous( limits=c(0,200))+
+  scale_x_continuous(limits=c(0,40))
+dev.print(file="RBCompPerGame.png",device=png, height=600,width=800)
+dev.off()
+
+
+rm(rbstats,wrstats,qbstats,avgqbadj,avgqbcomp,avgwradj,avgwrcomp,rbavgadj,rbypa)
 
 ###Build Points Tables####
 ###Develop Passing Points Table Per Game
