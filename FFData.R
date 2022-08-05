@@ -10,7 +10,7 @@ pbp<- read.csv("pbp_history.csv")%>%
   filter(season==seasons)
 
 
-colr<-teams_colors_logos%>% select(team_abbr,team_color, team_color2,team_logo_espn)
+#colr<-teams_colors_logos%>% select(team_abbr,team_color, team_color2,team_logo_espn)
 
 #Background Analysis####
 ###Analyse QB Stats
@@ -309,8 +309,8 @@ rushing_pts_pg <-pbp%>%
     attempt = sum(rush_attempt, na.rm=TRUE),
     yards = sum(rushing_yards, na.rm=TRUE),
     td = sum(rush_touchdown),
-    rush.pts_yards = yards*.15,
-    rush.pts_attempt = attempt*-.25,
+    rush.pts_yards = yards*.16,
+    rush.pts_attempt = attempt*-.26,
     rush.pts_td = td*6,
     rush.pts_tot = rush.pts_yards+rush.pts_td,
     rush.pts_std = (yards*.1)+rush.pts_td,
@@ -332,7 +332,8 @@ rushing_pts_tot <- rushing_pts_pg%>%
   )
 ###Build Combined Table#####
 ###Create Combined Table per Game
-players<-fast_scraper_roster(seasons)
+players<-read.csv("player_history.csv")%>%
+  filter(season==seasons)
 passers<-passing_pts_pg%>%
   select(gsis_id,name,game_id)
 
@@ -396,10 +397,17 @@ ggplot(ffpts_tot,aes(y=pts_tot,x=position, fill=position))+geom_point()+
 ggplot(ffpts_tot,aes(y=pts_std_tot,x=position, fill=position))+geom_point()+
   scale_y_continuous(limits=c(-20,700))
 
-ggplot(ffpts_tot,aes(y=pts_tot,x=position, fill=position))+geom_boxplot()+
-  scale_y_continuous(limits=c(0,600))
-ggplot(ffpts_tot,aes(y=pts_std_tot,x=position, fill=position))+geom_boxplot()+
-  scale_y_continuous(limits=c(0,600))
+ggplot(ffpts_pg,aes(y=pts_gm,x=position, fill=position))+geom_point()+
+  scale_y_continuous(limits=c(-20,700))
+
+ggplot(ffpts_tot,aes(y=pts_tot,x=pts_avg, fill=position))+
+  geom_point(aes(colour=position))+
+  scale_y_continuous(limits=c(0,500))+
+  scale_x_continuous(limits=c(0,40))
+ggplot(ffpts_tot,aes(y=pts_std_tot,x=pts_std_avg, fill=position))+
+  geom_point(aes(colour=position))+
+  scale_y_continuous(limits=c(0,500))+
+  scale_x_continuous(limits=c(0,40))
 
 
 ####Build Top Position Table####
@@ -443,6 +451,15 @@ fftoppts<-topqb%>%
   union_all(topte)
 
 rm(topqb,topwr,toprb,topte)
+
+ggplot(fftoppts,aes(y=pts_tot,x=pts_avg, fill=position))+
+  geom_point(aes(colour=position))+
+  scale_y_continuous(limits=c(100,515))+
+  scale_x_continuous(limits=c(10,31))
+ggplot(fftoppts,aes(y=pts_std_tot,x=pts_std_avg, fill=position))+
+  geom_point(aes(colour=position))+
+  scale_y_continuous(limits=c(100,515))+
+  scale_x_continuous(limits=c(10,31))
 
 ggplot(fftoppts,aes(y=fs_pts_est,x=position))+
   geom_point(data=fftoppts,aes(fill=position))+
