@@ -1,11 +1,13 @@
 # FFAnalysis
 
 ##Introduction
+
 I like fantasy football but there are some things that have always bothered me about it. First, standard scoring is not fun if you don't have a good Running Back because they always are the bell-cows for the team. Second, PPR tends to reverse that and make the Running Backs more of an afterthought. 
 
 I have been working to develop an addition to skill position scoring that both rewards efficiency for the position and equalizes the points scored by each position group. To do this the goal is to create a point adjustment for each group that will give a small positive or negative adjustment based around the league average for each skill group. 
 
 ###expectations and Limitations
+
 To accomplish this goals I had to set expectations and understand the limitations for the project. There were several considerations I needed to put front and center. 
 
 'Fantasy platforms have limited category options for scoring' 
@@ -18,6 +20,7 @@ To accomplish this goals I had to set expectations and understand the limitation
 So I loaded up NFLFastr into RStudio and started doing some background statistical analysis. 
 
 ###Quarterback Analysis
+
 I first took a look at the quarterbacks I filtered and grouped 2021 NFL season Play by Play data to include only pass plays and passers with more than 3 attempts and calculated a per game passes, completions, incompletions, and completion percentage for each passer.
 '''
 qbstats <-pbp%>% 
@@ -51,6 +54,7 @@ Here are are the final results.
 ![QB Throws vs Completions and Point Adjustment per Game](./charts/QBCompPerGame.png)
 
 ###Other Position Groups
+
 I used the same method to adjust receiving and rushing attempts. However it was a little more complicated because the options for points are more limited on each. The to get the proper results.  However, in the end I found the following adjustments gave the best results. 
 
 '''
@@ -66,6 +70,7 @@ Receivers get an extra:
 *NOTE* these adjustments are above standard PPR scoring, so the receivers will get 2 points per reception and rushers get .16 points per yard. 
 
 Here are the final results for the remaining positions. 
+
 ![WR Point Adjustment per Game](./charts/WRAjustPerGame.png)
 ![RB Point Adjustment per Game](./charts/RBAjustPerGame.png)
 
@@ -83,7 +88,11 @@ To wrap things up, in these last two charts you can compare the distribution of 
 ![Player Points Under Standard PPR](./charts/PlayerScoresStdPPR.png)
 
 ###PLAYER SCORING DATA FILES
+
 Here are links to CSV files that show points totals for the season, per game, and one with just the top players in each position group. 
+
 [All Player Points Per Game](./data/ff_allplayer_pergame_points.csv)
+
 [All Player Points Season Total](./data/ff_allplayer_totalseason_points.csv)
+
 [Top Player Season Totals](./data/ff_top_players_points.csv)
