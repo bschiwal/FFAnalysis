@@ -1,25 +1,25 @@
 # FFAnalysis
 
-##Introduction
+## Introduction
 
 I like fantasy football but there are some things that have always bothered me about it. First, standard scoring is not fun if you don't have a good Running Back because they always are the bell-cows for the team. Second, PPR tends to reverse that and make the Running Backs more of an afterthought. 
 
 I have been working to develop an addition to skill position scoring that both rewards efficiency for the position and equalizes the points scored by each position group. To do this the goal is to create a point adjustment for each group that will give a small positive or negative adjustment based around the league average for each skill group. 
 
-###expectations and Limitations
+### expectations and Limitations
 
 To accomplish this goals I had to set expectations and understand the limitations for the project. There were several considerations I needed to put front and center. 
 
-'Fantasy platforms have limited category options for scoring' 
-'You can only give and remove points to two significant digits'
-'I want players above the average to get a positive adjustment'
-'Players below the average line should also get a negative point adjustment'
-'When all adjustments are made there should be relative parity among position groups'
-'The average of all points adjustments should be as close to zero as possible'
+' Fantasy platforms have limited category options for scoring' 
+' You can only give and remove points to two significant digits'
+' I want players above the average to get a positive adjustment'
+' Players below the average line should also get a negative point adjustment'
+' When all adjustments are made there should be relative parity among position groups'
+' The average of all points adjustments should be as close to zero as possible'
 
 So I loaded up NFLFastr into RStudio and started doing some background statistical analysis. 
 
-###Quarterback Analysis
+### Quarterback Analysis
 
 I first took a look at the quarterbacks I filtered and grouped 2021 NFL season Play by Play data to include only pass plays and passers with more than 3 attempts and calculated a per game passes, completions, incompletions, and completion percentage for each passer.
 '''
@@ -53,7 +53,7 @@ Here are are the final results.
 
 ![QB Throws vs Completions and Point Adjustment per Game](./charts/QBCompPerGame.png)
 
-###Other Position Groups
+### Other Position Groups
 
 I used the same method to adjust receiving and rushing attempts. However it was a little more complicated because the options for points are more limited on each. The to get the proper results.  However, in the end I found the following adjustments gave the best results. 
 
@@ -80,14 +80,14 @@ Here are the final results for the remaining positions.
 
 
 
-###COMPLETE COMPARISON
+### COMPLETE COMPARISON
 
 To wrap things up, in these last two charts you can compare the distribution of players scoring between the two methods. Quarterbacks are weighted closer to the rest of the group and WR/RB are dispersed more evenly throughout the body of the chart. 
 
 ![Player Points Under New Method](./charts/PlayerScoresNew.png)
 ![Player Points Under Standard PPR](./charts/PlayerScoresStdPPR.png)
 
-###PLAYER SCORING DATA FILES
+### PLAYER SCORING DATA FILES
 
 Here are links to CSV files that show points totals for the season, per game, and one with just the top players in each position group. 
 
