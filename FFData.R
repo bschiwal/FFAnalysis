@@ -6,7 +6,7 @@ library(ggrepel)
 
 ###Load play by play data
 seasons<- 2021
-pbp<- read.csv("pbp_history.csv")%>%
+pbp<- read.csv("data/pbp_history.csv")%>%
   filter(season==seasons)
 
 
@@ -53,7 +53,7 @@ ggplot(qbstats,aes(x=points3,y=comp_pct)) +
         plot.subtitle = element_text(hjust=.5,face="italic",size=10))+
   scale_y_continuous(labels=scales::percent, limits=c(0,1))+
   scale_x_continuous(limits=c(-25,25))
-  dev.print(file="QBAjustPerGame.png",device=png, height=600,width=800)
+  dev.print(file="charts/QBAjustPerGame.png",device=png, height=600,width=800)
   dev.off()
 
 ggplot(qbstats,aes(x=attempts,y=completions))+
@@ -70,7 +70,7 @@ ggplot(qbstats,aes(x=attempts,y=completions))+
   theme(plot.title=element_text(hjust=.5, face="bold", size=18))+
   scale_y_continuous( limits=c(0,65))+
   scale_x_continuous(limits=c(0,65))
-dev.print(file="QBCompPerGame.png",device=png, height=600,width=800)
+dev.print(file="charts/QBCompPerGame.png",device=png, height=600,width=800)
 dev.off()
 
 
@@ -114,7 +114,7 @@ ggplot(wrstats,aes(x=adj,y=comp_pct)) +
         plot.subtitle = element_text(hjust=.5,face="italic",size=10))+
   scale_y_continuous(labels=scales::percent, limits=c(0,1))+
   scale_x_continuous(limits=c(-8,8))
-dev.print(file="WRAjustPerGame.png",device=png, height=600,width=800)
+dev.print(file="charts/WRAjustPerGame.png",device=png, height=600,width=800)
 dev.off()
 
 
@@ -133,7 +133,7 @@ ggplot(wrstats,aes(x=target,y=reception))+
   theme(plot.title=element_text(hjust=.5, face="bold", size=18))+
   scale_y_continuous( limits=c(0,20))+
   scale_x_continuous(limits=c(0,20))
-dev.print(file="WRCompPerGame.png",device=png, height=600,width=800)
+dev.print(file="charts/WRCompPerGame.png",device=png, height=600,width=800)
 dev.off()
 
 mean(wrstats$comp_pct)
@@ -177,7 +177,7 @@ ggplot(rbstats,aes(x=pts_adj,y=ydsperattpt)) +
         plot.subtitle = element_text(hjust=.5,face="italic",size=10))+
   scale_y_continuous(limits=c(-5,25))+
   scale_x_continuous(limits=c(-5,5))
-dev.print(file="RBAjustPerGame.png",device=png, height=600,width=800)
+dev.print(file="charts/RBAjustPerGame.png",device=png, height=600,width=800)
 dev.off()
 
 
@@ -196,7 +196,7 @@ ggplot(rbstats,aes(x=attempt,y=yards))+
   theme(plot.title=element_text(hjust=.5, face="bold", size=18))+
   scale_y_continuous( limits=c(0,200))+
   scale_x_continuous(limits=c(0,40))
-dev.print(file="RBCompPerGame.png",device=png, height=600,width=800)
+dev.print(file="charts/RBCompPerGame.png",device=png, height=600,width=800)
 dev.off()
 
 
@@ -330,9 +330,10 @@ rushing_pts_tot <- rushing_pts_pg%>%
     rush.tot_pts_std = sum(rush.pts_std),
     rush.tot_adj = sum(rush.pts_adj)
   )
+rm(pbp)
 ###Build Combined Table#####
 ###Create Combined Table per Game
-players<-read.csv("player_history.csv")%>%
+players<-read.csv("data/player_history.csv")%>%
   filter(season==seasons)
 passers<-passing_pts_pg%>%
   select(gsis_id,name,game_id)
@@ -372,9 +373,10 @@ ffpts_pg<- join_step5%>%
     pts_gm_adj= pass.pts_diff+rush.pts_adj+rec.pts_adj
   )
 
-rm(join_step1,join_step2,join_step3,join_step4,join_step5, 
+rm(seasons,join_step1,join_step2,join_step3,join_step4,join_step5, 
    players,passers,rushers,receiver,ffplayer,
-   passing_pts_pg,passing_pts_tot,recieving_pts_pg,recieving_pts_tot,rushing_pts_pg,rushing_pts_tot)
+   passing_pts_pg,passing_pts_tot,recieving_pts_pg,
+   recieving_pts_tot,rushing_pts_pg,rushing_pts_tot)
 
 ###Condense Final Table to Total Season
 ffpts_tot<- ffpts_pg%>%
@@ -403,12 +405,33 @@ ggplot(ffpts_pg,aes(y=pts_gm,x=position, fill=position))+geom_point()+
 ggplot(ffpts_tot,aes(y=pts_tot,x=pts_avg, fill=position))+
   geom_point(aes(colour=position))+
   scale_y_continuous(limits=c(0,500))+
-  scale_x_continuous(limits=c(0,40))
+  scale_x_continuous(limits=c(0,40))+
+  ggtitle("2021 Fantasy Points per Player")+
+  xlab("Avg Points per Game")+
+  ylab("Total Season Points")+
+  labs(subtitle="New Scoring Method",
+       caption= "Made by @BSchiwal, Datasource = @NFLFastr", 
+       position="Position")+
+  theme(plot.title=element_text(hjust=.5, face="bold", size=18),
+        plot.subtitle=element_text(hjust=.5,size=10))
+dev.print(file="charts/PlayerScoresNew.png",device=png, height=600,width=800)
+dev.off()
+
+
 ggplot(ffpts_tot,aes(y=pts_std_tot,x=pts_std_avg, fill=position))+
   geom_point(aes(colour=position))+
   scale_y_continuous(limits=c(0,500))+
-  scale_x_continuous(limits=c(0,40))
-
+  scale_x_continuous(limits=c(0,40))+
+  ggtitle("2021 Fantasy Points per Player")+
+  xlab("Avg Points per Game")+
+  ylab("Total Season Points")+
+  labs(subtitle="Standard PPR Scoring Method",
+       caption= "Made by @BSchiwal, Datasource = @NFLFastr", 
+       position="Position")+
+  theme(plot.title=element_text(hjust=.5, face="bold", size=18),
+        plot.subtitle=element_text(hjust=.5,size=10))
+dev.print(file="charts/PlayerScoresStdPPR.png",device=png, height=600,width=800)
+dev.off()
 
 ####Build Top Position Table####
 topqb<-ffpts_tot%>%
@@ -451,6 +474,10 @@ fftoppts<-topqb%>%
   union_all(topte)
 
 rm(topqb,topwr,toprb,topte)
+
+write.csv(fftoppts,"data/ff_top_players_points.csv", row.names=FALSE)
+write.csv(ffpts_tot,"data/ff_allplayer_totalseason_points.csv",row.names=FALSE)
+write.csv(ffpts_pg,"data/ff_allplayer_pergame_points.csv",row.names=FALSE)
 
 ggplot(fftoppts,aes(y=pts_tot,x=pts_avg, fill=position))+
   geom_point(aes(colour=position))+
