@@ -10,17 +10,17 @@ I have been working to develop an addition to skill position scoring that both r
 
 To accomplish this goals I had to set expectations and understand the limitations for the project. There were several considerations I needed to put front and center. 
 
-` Fantasy platforms have limited category options for scoring ` 
+` -Fantasy platforms have limited category options for scoring ` 
 
-` You can only give and remove points to two significant digits `
+` -You can only give and remove points to two significant digits `
 
-` I want players above the average to get a positive adjustment `
+` -I want players above the average to get a positive adjustment `
 
-` Players below the average line should also get a negative point adjustment `
+` -Players below the average line should also get a negative point adjustment `
 
-` When all adjustments are made there should be relative parity among position groups `
+` -When all adjustments are made there should be relative parity among position groups `
 
-` The average of all points adjustments should be as close to zero as possible `
+` -The average of all points adjustments should be as close to zero as possible `
 
 
 So I loaded up NFLFastr into RStudio and started doing some background statistical analysis. 
