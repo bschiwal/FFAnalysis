@@ -22,7 +22,8 @@ So I loaded up NFLFastr into RStudio and started doing some background statistic
 ### Quarterback Analysis
 
 I first took a look at the quarterbacks I filtered and grouped 2021 NFL season Play by Play data to include only pass plays and passers with more than 3 attempts and calculated a per game passes, completions, incompletions, and completion percentage for each passer.
-'''
+
+```
 qbstats <-pbp%>% 
   filter(
     play_type=="pass",
@@ -44,7 +45,7 @@ After doing this, I was able to calculate the average completion percentage as 6
 > avgqbcomp<-round(mean(qbstats$comp_pct),2)
 > avgqbcomp
 [1] 0.6
-'''
+```
 For quarterbacks you can give points for each pass attempted, completed, and each incomplete pass. So an adjustment can be made for each pass attempt where you give the passer points for each completion, and corresponding lesser amount of negative points for each attempt. This means that a completion will be worth positive points and an incompletion will be worth negative points. The points adjustment just needs to be fitted around a linear model of all games. Doing some napkin math, -1 points per Attempt and +1.6 per completion should result in the proper fit. But it was a little off, this means that there are some outliers that are dragging the average down. After some trial and error I came to 1.65 points for each completion and -1 per attepmt giving the results I needed.
 
 Here are are the final results. 
