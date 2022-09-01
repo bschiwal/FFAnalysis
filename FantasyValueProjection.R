@@ -455,7 +455,7 @@ qb <-proj%>%
   )%>%
   arrange(desc(pts_tot))%>%
   mutate(
-    pos_rank = rank(rank,ties.method = "first")
+    pos_rank = rank(-pts_tot,ties.method = "first")
   )
 rb <-proj%>% 
   filter(
@@ -463,7 +463,7 @@ rb <-proj%>%
   )%>%
   arrange(desc(pts_tot))%>%
   mutate(
-    pos_rank = rank(rank,ties.method = "first")
+    pos_rank = rank(-pts_tot,ties.method = "first")
   ) 
 
 wr <-proj%>% 
@@ -472,7 +472,7 @@ wr <-proj%>%
   )%>%
   arrange(desc(pts_tot))%>%
   mutate(
-    pos_rank = rank(rank,ties.method = "first")
+    pos_rank = rank(-pts_tot,ties.method = "first")
   )
 
 te <-proj%>% 
@@ -481,7 +481,7 @@ te <-proj%>%
   )%>%
   arrange(desc(pts_tot))%>%
   mutate(
-    pos_rank = rank(rank,ties.method = "first")
+    pos_rank = rank(-pts_tot,ties.method = "first")
   )
 
 
@@ -491,7 +491,7 @@ def <-proj%>%
   )%>%
   arrange(desc(pts_tot))%>%
   mutate(
-    pos_rank = rank(rank,ties.method = "first")
+    pos_rank = rank(-pts_tot,ties.method = "first")
   )
 
 k <-proj%>% 
@@ -500,7 +500,7 @@ k <-proj%>%
   )%>%
   arrange(desc(pts_tot))%>%
   mutate(
-    pos_rank = rank(rank,ties.method = "first")
+    pos_rank = rank(-pts_tot,ties.method = "first")
   )
 
 ##Further Separate into Tiers based on 12 team league
