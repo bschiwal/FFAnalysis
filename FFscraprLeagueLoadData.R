@@ -102,6 +102,10 @@ master_trans<-
 trades_master<- master_trans%>%
   filter(type=="TRADE"|is.na(type)==TRUE)
 
+trade_manual_id<- c(12483,3916430,3918298,3925347,4039050,4360438)
+trade_manual_index<-c(1,2,1,2,3,3)
+trade_manual<-data.frame(trade_manual_index,trade_manual_id)
+
 trade_recieved<- master_trans%>%
   filter(type=="TRADE")%>%
   rename("player_id_given"="player_id","player_name_given"="player_name","team_given"="team","pos_given"="pos")%>%
@@ -110,7 +114,8 @@ trade_recieved<- master_trans%>%
   group_by(trade_id)%>%
   mutate(counter=row_number(trade_id))%>%
   ungroup(trade_id)%>%
-  select(-c(trade_id,counter))
+  select(-c(trade_id,counter))%>%
+  left_join(trade_manual,by=c("player_id_given"="trade_manual_id"))
 
 
 trade_given<-master_trans%>%
@@ -121,27 +126,44 @@ trade_given<-master_trans%>%
   group_by(trade_id)%>%
   mutate(counter=row_number(trade_id))%>%
   ungroup(trade_id)%>%
-  select(-c(trade_id,franchise_name,trade_partner,counter))
+  select(-c(trade_id,franchise_name,trade_partner,counter))%>%
+  left_join(trade_manual,by=c("player_id_recieved"="trade_manual_id"))
 
 trade<- left_join(
   trade_given,trade_recieved,
-                  by=c("franchise_id"="franchise_id", "trans_date"="trans_date"))
+                  by=c("franchise_id"="franchise_id", "trans_date"="trans_date","trade_manual_index"))
+
+
+trade_value<-
+    left_join(
+      master_trans%>%
+        filter(type!="TRADE")%>%
+        filter(type!="DROP") %>%
+        filter(type_desc!="dropped" | is.na(type_desc==TRUE))%>%
+        select(player_id,franchise_id,trans_date)%>%
+        group_by(player_id)%>%
+        slice_max(trans_date),
+      master_trans%>%
+        filter(type!="TRADE")%>%
+        filter(type!="DROP") %>%
+        filter(type_desc!="dropped" | is.na(type_desc==TRUE)),
+      by= c("player_id","franchise_id","trans_date")) 
 
 tradevalue<- 
   left_join(
     master_trans%>%
-      filter(type!="TRADE"| is.na(type)==FALSE)%>%
+      filter(type!="TRADE")%>%
       select(player_id,franchise_id,trans_date,player_value),
     master_trans%>%
-      filter(type!="TRADE"| is.na(type)==FALSE)%>%
+      filter(type!="TRADE")%>%
       group_by(player_id,franchise_id)%>%
       summarize(trans_date=max(trans_date)),
     by=c("player_id","franchise_id","trans_date")
   )
 
-trade<-left_join(trade,tradevalue%>%
+trade<-left_join(trade,trade_value%>%
                          select(player_id,franchise_id,player_value),
-                       by=c("player_id_given"="player_id","trade_partner"="franchise_id"))%>%
+                       by=c("player_id_given"="player_id","franchise_id"="franchise_id"))%>%
   select(franchise_id,player_id_recieved,player_value)%>%
   rename("player_id"="player_id_recieved")
 
