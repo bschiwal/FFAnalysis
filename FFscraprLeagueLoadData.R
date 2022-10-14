@@ -102,11 +102,43 @@ master_trans<-
 trades_master<- master_trans%>%
   filter(type=="TRADE"|is.na(type)==TRUE)
 
-trade_manual_id<- c(12483,3916430,3918298,3925347,4039050,4360438)
+##For certain trades with more than one player on each side of the transaction we need to manually define which players values align
+trade_manual_id<- c(
+  12483,   #Matthew Stafford
+  3916430, #Nyeem Heins
+  3918298, #Josh Allen
+  3925347, #Damian Harris
+  4039050, #Devin Duvarnay
+  4360438 #Brandon Aiyk
+
+  )
 trade_manual_index<-c(1,2,1,2,3,3)
 trade_manual<-data.frame(trade_manual_index,trade_manual_id)
+rm(trade_manual_id,trade_manual_index)
 
-trade_recieved<- master_trans%>%
+###To get the base value of traded players, we first need to get the values of players before the traded transaction
+##for now I am doing this by filtering the master transaction dataset to drop all trade and 'dropped' line items and then take the max transactiond date
+##this will break when someone trades a player that they recieved on a trade in the same season and will need to be redone or manually passed in
+
+
+trade_value<-
+  left_join(
+    master_trans%>% ##Master trans most recent transaction for each player and franchise group
+      filter(type!="TRADE")%>%
+      filter(type!="DROP") %>%
+      filter(type_desc!="dropped" | is.na(type_desc==TRUE))%>%
+      select(player_id,franchise_id,trans_date)%>%
+      group_by(player_id)%>%
+      slice_max(trans_date),
+    master_trans%>%  ##Pull in details for each group from base dataset
+      filter(type!="TRADE")%>%
+      filter(type!="DROP") %>%
+      filter(type_desc!="dropped" | is.na(type_desc==TRUE)),
+    by= c("player_id","franchise_id","trans_date")) 
+
+
+##Create a frame with all the players a given team recieved and add grouping index to align player values
+trade_given<- master_trans%>%
   filter(type=="TRADE")%>%
   rename("player_id_given"="player_id","player_name_given"="player_name","team_given"="team","pos_given"="pos")%>%
   mutate(trade_id= paste(trans_date,"-",franchise_id))%>%
@@ -115,10 +147,14 @@ trade_recieved<- master_trans%>%
   mutate(counter=row_number(trade_id))%>%
   ungroup(trade_id)%>%
   select(-c(trade_id,counter))%>%
-  left_join(trade_manual,by=c("player_id_given"="trade_manual_id"))
+  left_join(trade_manual,by=c("player_id_given"="trade_manual_id"))%>%
+  left_join(trade_value%>%
+              select(player_id,franchise_id,player_value),
+            by=c("player_id_given"="player_id","franchise_id"="franchise_id"))
 
 
-trade_given<-master_trans%>%
+##Create a frame with all the players a team gave up and add grouping index to align player values  
+trade_recieved<-master_trans%>%
   filter(is.na(type)==TRUE)%>%
   rename("player_id_recieved"="player_id","player_name_recieved"="player_name","team_recieved"="team","pos_recieved"="pos")%>%
   mutate(trade_id= paste(trans_date,"-",franchise_id))%>%
@@ -129,52 +165,62 @@ trade_given<-master_trans%>%
   select(-c(trade_id,franchise_name,trade_partner,counter))%>%
   left_join(trade_manual,by=c("player_id_recieved"="trade_manual_id"))
 
+##Players without a defined index recieve an index of 1
+trade_given[is.na(trade_given)] <- 1
+trade_recieved[is.na(trade_recieved)] <- 1
+
+##Join Given and Received frames
 trade<- left_join(
-  trade_given,trade_recieved,
+  trade_recieved,trade_given,
                   by=c("franchise_id"="franchise_id", "trans_date"="trans_date","trade_manual_index"))
 
+###This section accounts for trades where each side of the group index has an uneven amount of players
 
-trade_value<-
-    left_join(
-      master_trans%>%
-        filter(type!="TRADE")%>%
-        filter(type!="DROP") %>%
-        filter(type_desc!="dropped" | is.na(type_desc==TRUE))%>%
-        select(player_id,franchise_id,trans_date)%>%
-        group_by(player_id)%>%
-        slice_max(trans_date),
-      master_trans%>%
-        filter(type!="TRADE")%>%
-        filter(type!="DROP") %>%
-        filter(type_desc!="dropped" | is.na(type_desc==TRUE)),
-      by= c("player_id","franchise_id","trans_date")) 
+##First look group the given side of the transaction and split player amount by number of players received when given player is duplicated
+trade_uneven_given<- trade%>%
+  group_by(franchise_id,player_id_given,trade_manual_index)%>%
+  summarize(players_given = 1,
+            players_recieved = n(),
+            player_value_given = first(player_value),
+            player_value_split = ceiling(player_value_given/players_recieved))
 
-tradevalue<- 
-  left_join(
-    master_trans%>%
-      filter(type!="TRADE")%>%
-      select(player_id,franchise_id,trans_date,player_value),
-    master_trans%>%
-      filter(type!="TRADE")%>%
-      group_by(player_id,franchise_id)%>%
-      summarize(trans_date=max(trans_date)),
-    by=c("player_id","franchise_id","trans_date")
-  )
+##then group the received side and sum all given values when recieved player is duplicated
+trade_uneven_recieved<-trade%>%
+  group_by(franchise_id,player_id_recieved,trade_manual_index)%>%
+  summarize(players_recieved = 1,
+            players_given=n(),
+            player_value_total = sum(player_value))
 
-trade<-left_join(trade,trade_value%>%
-                         select(player_id,franchise_id,player_value),
-                       by=c("player_id_given"="player_id","franchise_id"="franchise_id"))%>%
-  select(franchise_id,player_id_recieved,player_value)%>%
+##join datasets and group again by player recieved, then take total for all rows unless recieved more players than gave, then take split value.
+trade_final<-left_join(trade_uneven_recieved%>%
+                          select(-players_recieved),
+                        trade_uneven_given%>%
+                          select(-players_given),
+                        by=c("franchise_id","trade_manual_index"))%>%
+  group_by(franchise_id,player_id_recieved)%>%
+  summarize(given = first(players_given),
+            recieved = first(players_recieved),
+            value_total = first(player_value_total),
+            value_split = first(player_value_split),
+            player_value = if_else(given>1,value_total,as.integer(value_split))
+              )%>%
+  select(-given,-recieved,-value_total,-value_split)%>%
   rename("player_id"="player_id_recieved")
 
-rm(tradevalue,trade_given,trade_recieved)
+rm(trade_uneven_given,trade_uneven_recieved)              
+
+
+##rebuild trade dataset with values
+
+
+rm(trade_value,trade_given,trade_recieved,trade_manual)
 
 
 roster_trade<- roster%>%
   filter(acquisition_type=="TRADE")%>%
-  left_join(trade,
+  left_join(tradefinal,
             by=c("player_id","franchise_id"))
-rm(trade)
+rm(trade,tradefinal)
 ###Join Values to Roster
 roster_final<-union_all(roster_drafted,roster_waiver)%>%
   union_all(roster_trade)%>%
@@ -183,7 +229,8 @@ roster_final<-union_all(roster_drafted,roster_waiver)%>%
 ###test if initial roster and final build of roster are same size 
 {stopifnot(count(roster)==count(roster_final))
 roster<-roster_final
-###clear environment except roster
+
+###clear environment except roster, trade, and suspension data
 rm(list=setdiff(ls(),c("roster", "trades_master","susp_players")))
 }
 
@@ -202,7 +249,8 @@ roster<-roster%>%
                                 round(keeper_base*1.15,0)) #Greater of 10 or a 15% increase in salary
   )%>%
   select(-c(eligible_pos,acquisition_date))
- 
+
+## Write data to CSV file 
 write.csv(roster, file="data/keepervalues.csv", row.names=TRUE)
 
 
