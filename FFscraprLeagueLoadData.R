@@ -218,7 +218,7 @@ rm(trade_value,trade_given,trade_recieved,trade_manual)
 
 roster_trade<- roster%>%
   filter(acquisition_type=="TRADE")%>%
-  left_join(tradefinal,
+  left_join(trade_final,
             by=c("player_id","franchise_id"))
 rm(trade,tradefinal)
 ###Join Values to Roster
