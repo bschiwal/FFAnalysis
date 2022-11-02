@@ -8,28 +8,28 @@
 "7",1,"Ooh Baby I Like It Ra",4045163,"Miles Sanders","PHI","RB","NORMAL","DRAFT",2022-08-28,11,0,1,11,13
 "8",1,"Ooh Baby I Like It Ra",3139925,"Rashaad Penny","SEA","RB","NORMAL","DRAFT",2022-08-28,7,0,1,7,10
 "9",1,"Ooh Baby I Like It Ra",4241416,"Chuba Hubbard","CAR","RB","NORMAL","ADD",2022-10-22,3,0,1,3,10
-"10",1,"Ooh Baby I Like It Ra",3916430,"Nyheim Hines","IND","RB","NORMAL","TRADE",2022-10-05,4,0,1,4,10
+"10",1,"Ooh Baby I Like It Ra",3916430,"Nyheim Hines","BUF","RB","NORMAL","TRADE",2022-10-05,4,0,1,4,10
 "11",1,"Ooh Baby I Like It Ra",4361411,"Pat Freiermuth","PIT","TE","NORMAL","DRAFT",2022-08-28,5,0,1,5,10
 "12",1,"Ooh Baby I Like It Ra",2573401,"Tyler Higbee","LAR","TE","NORMAL","DRAFT",2022-08-28,2,0,1,2,10
 "13",1,"Ooh Baby I Like It Ra",4374302,"Amon-Ra St. Brown","DET","WR","NORMAL","DRAFT",2022-08-28,21,0,1,21,24
 "14",1,"Ooh Baby I Like It Ra",2976212,"Stefon Diggs","BUF","WR","NORMAL","DRAFT",2022-08-28,50,0,1,50,57
 "15",1,"Ooh Baby I Like It Ra",3135321,"Hunter Renfrow","OAK","WR","NORMAL","DRAFT",2022-08-28,9,0,1,9,10
-"16",1,"Ooh Baby I Like It Ra",4046692,"Chase Claypool","PIT","WR","NORMAL","DRAFT",2022-08-28,2,0,1,2,10
+"16",1,"Ooh Baby I Like It Ra",4046692,"Chase Claypool","CHI","WR","NORMAL","DRAFT",2022-08-28,2,0,1,2,10
 "17",1,"Ooh Baby I Like It Ra",4248528,"Christian Watson","GBP","WR","NORMAL","DRAFT",2022-08-28,4,0,1,4,10
 "18",1,"Ooh Baby I Like It Ra",4360438,"Brandon Aiyuk","SFO","WR","NORMAL","TRADE",2022-10-05,2,0,1,2,10
-"19",2,"Lambeau Leaps",-16009,"Packers D/ST","GBP","DST","NORMAL","DRAFT",2022-08-28,8,0,1,8,10
-"20",2,"Lambeau Leaps",4243371,"Riley Patterson","JAC","K","NORMAL","ADD",2022-10-07,1,0,1,1,10
+"19",2,"Lambeau Leaps",-16012,"Chiefs D/ST","KCC","DST","NORMAL","ADD",2022-10-29,1,0,1,1,10
+"20",2,"Lambeau Leaps",3050478,"Jake Elliott","PHI","K","NORMAL","ADD",2022-11-02,1,0,1,1,10
 "21",2,"Lambeau Leaps",3915511,"Joe Burrow","CIN","QB","NORMAL","DRAFT",2022-08-28,41,0,1,41,47
 "22",2,"Lambeau Leaps",4383351,"Trey Lance","SFO","QB","NORMAL","DRAFT",2022-08-28,10,0,1,10,12
-"23",2,"Lambeau Leaps",11237,"Matt Ryan","IND","QB","NORMAL","ADD",2022-10-19,5,0,1,5,10
-"24",2,"Lambeau Leaps",3917792,"Daniel Jones","NYG","QB","NORMAL","ADD",2022-10-26,1,0,1,1,10
-"25",2,"Lambeau Leaps",4427366,"Breece Hall","NYJ","RB","NORMAL","DRAFT",2022-08-28,20,0,1,20,23
-"26",2,"Lambeau Leaps",4239934,"AJ Dillon","GBP","RB","NORMAL","DRAFT",2022-08-28,8,0,1,8,10
-"27",2,"Lambeau Leaps",4360238,"Dameon Pierce","HOU","RB","NORMAL","DRAFT",2022-08-28,6,0,1,6,10
-"28",2,"Lambeau Leaps",4567048,"Kenneth Walker III","SEA","RB","NORMAL","DRAFT",2022-08-28,3,0,1,3,10
-"29",2,"Lambeau Leaps",3122976,"Jeff Wilson Jr.","SFO","RB","NORMAL","ADD",2022-09-14,20,0,1,20,23
-"30",2,"Lambeau Leaps",2975674,"Robert Tonyan","GBP","TE","NORMAL","ADD",2022-09-11,1,0,1,1,10
-"31",2,"Lambeau Leaps",3915486,"Tyler Conklin","NYJ","TE","NORMAL","ADD",2022-09-28,4,0,1,4,10
+"23",2,"Lambeau Leaps",3917792,"Daniel Jones","NYG","QB","NORMAL","ADD",2022-10-26,1,0,1,1,10
+"24",2,"Lambeau Leaps",4427366,"Breece Hall","NYJ","RB","NORMAL","DRAFT",2022-08-28,20,0,1,20,23
+"25",2,"Lambeau Leaps",4239934,"AJ Dillon","GBP","RB","NORMAL","DRAFT",2022-08-28,8,0,1,8,10
+"26",2,"Lambeau Leaps",4360238,"Dameon Pierce","HOU","RB","NORMAL","DRAFT",2022-08-28,6,0,1,6,10
+"27",2,"Lambeau Leaps",4567048,"Kenneth Walker III","SEA","RB","NORMAL","DRAFT",2022-08-28,3,0,1,3,10
+"28",2,"Lambeau Leaps",3122976,"Jeff Wilson Jr.","MIA","RB","NORMAL","ADD",2022-09-14,20,0,1,20,23
+"29",2,"Lambeau Leaps",2975674,"Robert Tonyan","GBP","TE","NORMAL","ADD",2022-09-11,1,0,1,1,10
+"30",2,"Lambeau Leaps",3915486,"Tyler Conklin","NYJ","TE","NORMAL","ADD",2022-09-28,4,0,1,4,10
+"31",2,"Lambeau Leaps",4361050,"Isaiah Likely","BAL","TE","NORMAL","ADD",2022-11-02,1,0,1,1,10
 "32",2,"Lambeau Leaps",3128429,"Courtland Sutton","DEN","WR","NORMAL","DRAFT",2022-08-28,22,0,1,22,25
 "33",2,"Lambeau Leaps",4035687,"Michael Pittman Jr.","IND","WR","NORMAL","DRAFT",2022-08-28,24,0,1,24,28
 "34",2,"Lambeau Leaps",16731,"Brandin Cooks","HOU","WR","NORMAL","DRAFT",2022-08-28,12,0,1,12,14
@@ -58,8 +58,8 @@
 "57",4,"Total Luckbox",3929630,"Saquon Barkley","NYG","RB","NORMAL","DRAFT",2022-08-28,37,0,1,37,43
 "58",4,"Total Luckbox",4047365,"Josh Jacobs","OAK","RB","NORMAL","DRAFT",2022-08-28,18,0,1,18,21
 "59",4,"Total Luckbox",4569173,"Rhamondre Stevenson","NEP","RB","NORMAL","DRAFT",2022-08-28,6,0,1,6,10
-"60",4,"Total Luckbox",4371733,"Kenneth Gainwell","PHI","RB","NORMAL","DRAFT",2022-08-28,3,0,1,3,10
-"61",4,"Total Luckbox",4048244,"Alexander Mattison","MIN","RB","NORMAL","DRAFT",2022-08-28,3,0,1,3,10
+"60",4,"Total Luckbox",4048244,"Alexander Mattison","MIN","RB","NORMAL","DRAFT",2022-08-28,3,0,1,3,10
+"61",4,"Total Luckbox",4242873,"Eno Benjamin","ARI","RB","NORMAL","ADD",2022-10-28,1,0,1,1,10
 "62",4,"Total Luckbox",3121023,"Dallas Goedert","PHI","TE","NORMAL","DRAFT",2022-08-28,5,0,1,5,10
 "63",4,"Total Luckbox",3918639,"Gerald Everett","LAC","TE","NORMAL","DRAFT",2022-08-28,1,0,1,1,10
 "64",4,"Total Luckbox",4362628,"Ja'Marr Chase","CIN","WR","NORMAL","DRAFT",2022-08-28,61,0,1,61,70
@@ -67,17 +67,17 @@
 "66",4,"Total Luckbox",16460,"Adam Thielen","MIN","WR","NORMAL","DRAFT",2022-08-28,11,0,1,11,13
 "67",4,"Total Luckbox",4430191,"Skyy Moore","KCC","WR","NORMAL","DRAFT",2022-08-28,4,0,1,4,10
 "68",4,"Total Luckbox",4372414,"Elijah Moore","NYJ","WR","NORMAL","ADD",2022-10-19,1,0,1,1,10
-"69",5,"Lawrence  and Order CI",-16027,"Buccaneers D/ST","TBB","DST","NORMAL","DRAFT",2022-08-28,2,0,1,2,10
-"70",5,"Lawrence  and Order CI",-16021,"Eagles D/ST","PHI","DST","NORMAL","ADD",2022-10-05,3,0,1,3,10
-"71",5,"Lawrence  and Order CI",2985659,"Wil Lutz","NOS","K","NORMAL","ADD",2022-10-26,1,0,1,1,10
-"72",5,"Lawrence  and Order CI",4360310,"Trevor Lawrence","JAC","QB","NORMAL","DRAFT",2022-08-28,6,0,1,6,10
-"73",5,"Lawrence  and Order CI",4240703,"Kenny Pickett","PIT","QB","NORMAL","ADD",2022-09-01,2,0,1,2,10
-"74",5,"Lawrence  and Order CI",3051308,"PJ Walker","CAR","QB","NORMAL","ADD",2022-10-26,1,0,1,1,10
-"75",5,"Lawrence  and Order CI",4035538,"David Montgomery","CHI","RB","NORMAL","DRAFT",2022-08-28,20,0,1,20,23
-"76",5,"Lawrence  and Order CI",3043078,"Derrick Henry","TEN","RB","NORMAL","DRAFT",2022-08-28,47,0,1,47,54
-"77",5,"Lawrence  and Order CI",3051392,"Ezekiel Elliott","DAL","RB","NORMAL","DRAFT",2022-08-28,15,0,1,15,17
-"78",5,"Lawrence  and Order CI",4052042,"James Robinson","NYJ","RB","NORMAL","TRADE",2022-10-13,39,0,1,39,45
-"79",5,"Lawrence  and Order CI",3040151,"George Kittle","SFO","TE","NORMAL","DRAFT",2022-08-28,26,0,1,26,30
+"69",5,"Lawrence  and Order CI",-16021,"Eagles D/ST","PHI","DST","NORMAL","ADD",2022-10-05,3,0,1,3,10
+"70",5,"Lawrence  and Order CI",3049899,"Younghoe Koo","ATL","K","NORMAL","ADD",2022-11-02,3,0,1,3,10
+"71",5,"Lawrence  and Order CI",4360310,"Trevor Lawrence","JAC","QB","NORMAL","DRAFT",2022-08-28,6,0,1,6,10
+"72",5,"Lawrence  and Order CI",4240703,"Kenny Pickett","PIT","QB","NORMAL","ADD",2022-09-01,2,0,1,2,10
+"73",5,"Lawrence  and Order CI",14012,"Andy Dalton","NOS","QB","NORMAL","ADD",2022-11-02,3,0,1,3,10
+"74",5,"Lawrence  and Order CI",4035538,"David Montgomery","CHI","RB","NORMAL","DRAFT",2022-08-28,20,0,1,20,23
+"75",5,"Lawrence  and Order CI",3043078,"Derrick Henry","TEN","RB","NORMAL","DRAFT",2022-08-28,47,0,1,47,54
+"76",5,"Lawrence  and Order CI",3051392,"Ezekiel Elliott","DAL","RB","NORMAL","DRAFT",2022-08-28,15,0,1,15,17
+"77",5,"Lawrence  and Order CI",4052042,"James Robinson","NYJ","RB","NORMAL","TRADE",2022-10-13,39,0,1,39,45
+"78",5,"Lawrence  and Order CI",3040151,"George Kittle","SFO","TE","NORMAL","DRAFT",2022-08-28,26,0,1,26,30
+"79",5,"Lawrence  and Order CI",4258595,"Cole Kmet","CHI","TE","NORMAL","ADD",2022-11-02,1,0,1,1,10
 "80",5,"Lawrence  and Order CI",3915416,"DJ Moore","CAR","WR","NORMAL","DRAFT",2022-08-28,21,0,1,21,24
 "81",5,"Lawrence  and Order CI",3895856,"Christian Kirk","JAC","WR","NORMAL","DRAFT",2022-08-28,8,0,1,8,10
 "82",5,"Lawrence  and Order CI",2577327,"Tyler Lockett","SEA","WR","NORMAL","DRAFT",2022-08-28,3,0,1,3,10
@@ -119,39 +119,39 @@
 "118",8,"The  Vindicators",-16018,"Saints D/ST","NOS","DST","NORMAL","DRAFT",2022-08-28,1,0,1,1,10
 "119",8,"The  Vindicators",16339,"Brandon McManus","DEN","K","NORMAL","DRAFT",2022-08-28,1,0,1,1,10
 "120",8,"The  Vindicators",14881,"Russell Wilson","DEN","QB","NORMAL","DRAFT",2022-08-28,5,0,1,5,10
-"121",8,"The  Vindicators",16760,"Jimmy Garoppolo","SFO","QB","NORMAL","ADD",2022-10-20,1,0,1,1,10
-"122",8,"The  Vindicators",3117251,"Christian McCaffrey","SFO","RB","NORMAL","DRAFT",2022-08-28,57,0,1,57,66
-"123",8,"The  Vindicators",4242335,"Jonathan Taylor","IND","RB","NORMAL","DRAFT",2022-08-28,60,0,1,60,69
-"124",8,"The  Vindicators",4039359,"Darrell Henderson Jr.","LAR","RB","NORMAL","DRAFT",2022-08-28,1,0,1,1,10
-"125",8,"The  Vindicators",4035886,"Khalil Herbert","CHI","RB","NORMAL","DRAFT",2022-08-28,1,0,1,1,10
-"126",8,"The  Vindicators",4697815,"Rachaad White","TBB","RB","NORMAL","ADD",2022-09-22,1,0,1,1,10
-"127",8,"The  Vindicators",3051926,"Gus Edwards","BAL","RB","NORMAL","ADD",2022-10-26,5,0,1,5,10
-"128",8,"The  Vindicators",4240021,"Cam Akers","LAR","RB","NORMAL","TRADE",2022-10-13,1,0,1,1,10
-"129",8,"The  Vindicators",4036133,"T.J. Hockenson","DET","TE","NORMAL","DRAFT",2022-08-28,4,0,1,4,10
-"130",8,"The  Vindicators",2576925,"Darren Waller","OAK","TE","NORMAL","TRADE",2022-10-13,1,0,1,1,10
-"131",8,"The  Vindicators",4241389,"CeeDee Lamb","DAL","WR","NORMAL","DRAFT",2022-08-28,42,0,1,42,48
-"132",8,"The  Vindicators",3045138,"Mike Williams","LAC","WR","NORMAL","DRAFT",2022-08-28,21,0,1,21,24
-"133",8,"The  Vindicators",4361432,"Romeo Doubs","GBP","WR","NORMAL","DRAFT",2022-08-28,1,0,1,1,10
-"134",8,"The  Vindicators",3121427,"Curtis Samuel","WAS","WR","NORMAL","ADD",2022-09-14,1,0,1,1,10
-"135",8,"The  Vindicators",4040655,"Darnell Mooney","CHI","WR","NORMAL","ADD",2022-10-20,1,0,1,1,10
-"136",9,"Any Given Sundae",-16007,"Broncos D/ST","DEN","DST","NORMAL","ADD",2022-10-19,1,0,1,1,10
-"137",9,"Any Given Sundae",16486,"Brett Maher","DAL","K","NORMAL","ADD",2022-10-09,1,0,1,1,10
+"121",8,"The  Vindicators",3117251,"Christian McCaffrey","SFO","RB","NORMAL","DRAFT",2022-08-28,57,0,1,57,66
+"122",8,"The  Vindicators",4242335,"Jonathan Taylor","IND","RB","NORMAL","DRAFT",2022-08-28,60,0,1,60,69
+"123",8,"The  Vindicators",4039359,"Darrell Henderson Jr.","LAR","RB","NORMAL","DRAFT",2022-08-28,1,0,1,1,10
+"124",8,"The  Vindicators",4035886,"Khalil Herbert","CHI","RB","NORMAL","DRAFT",2022-08-28,1,0,1,1,10
+"125",8,"The  Vindicators",4697815,"Rachaad White","TBB","RB","NORMAL","ADD",2022-09-22,1,0,1,1,10
+"126",8,"The  Vindicators",3051926,"Gus Edwards","BAL","RB","NORMAL","ADD",2022-10-26,5,0,1,5,10
+"127",8,"The  Vindicators",4036133,"T.J. Hockenson","MIN","TE","NORMAL","DRAFT",2022-08-28,4,0,1,4,10
+"128",8,"The  Vindicators",4367209,"Greg Dulcich","DEN","TE","NORMAL","ADD",2022-10-28,3,0,1,3,10
+"129",8,"The  Vindicators",2576925,"Darren Waller","OAK","TE","NORMAL","TRADE",2022-10-13,1,0,1,1,10
+"130",8,"The  Vindicators",4241389,"CeeDee Lamb","DAL","WR","NORMAL","DRAFT",2022-08-28,42,0,1,42,48
+"131",8,"The  Vindicators",3045138,"Mike Williams","LAC","WR","NORMAL","DRAFT",2022-08-28,21,0,1,21,24
+"132",8,"The  Vindicators",4361432,"Romeo Doubs","GBP","WR","NORMAL","DRAFT",2022-08-28,1,0,1,1,10
+"133",8,"The  Vindicators",3121427,"Curtis Samuel","WAS","WR","NORMAL","ADD",2022-09-14,1,0,1,1,10
+"134",8,"The  Vindicators",4040655,"Darnell Mooney","CHI","WR","NORMAL","ADD",2022-10-20,1,0,1,1,10
+"135",8,"The  Vindicators",3930066,"Van Jefferson","LAR","WR","NORMAL","ADD",2022-10-27,1,0,1,1,10
+"136",9,"Any Given Sundae",-16027,"Buccaneers D/ST","TBB","DST","NORMAL","ADD",2022-11-02,1,0,1,1,10
+"137",9,"Any Given Sundae",12731,"Ryan Succop","TBB","K","NORMAL","ADD",2022-11-02,1,0,1,1,10
 "138",9,"Any Given Sundae",16757,"Derek Carr","OAK","QB","NORMAL","DRAFT",2022-08-28,3,0,1,3,10
-"139",9,"Any Given Sundae",3042519,"Aaron Jones","GBP","RB","NORMAL","DRAFT",2022-08-28,35,0,1,35,40
-"140",9,"Any Given Sundae",3115364,"Leonard Fournette","TBB","RB","NORMAL","DRAFT",2022-08-28,15,0,1,15,17
-"141",9,"Any Given Sundae",4040761,"Devin Singletary","BUF","RB","NORMAL","DRAFT",2022-08-28,7,0,1,7,10
-"142",9,"Any Given Sundae",4569987,"Jaylen Warren","PIT","RB","NORMAL","ADD",2022-09-14,6,0,1,6,10
-"143",9,"Any Given Sundae",3125116,"D'Onta Foreman","CAR","RB","NORMAL","ADD",2022-10-21,1,0,1,1,10
-"144",9,"Any Given Sundae",15847,"Travis Kelce","KCC","TE","NORMAL","DRAFT",2022-08-28,37,0,1,37,43
-"145",9,"Any Given Sundae",3123076,"David Njoku","CLE","TE","NORMAL","DRAFT",2022-08-28,1,0,1,1,10
-"146",9,"Any Given Sundae",3116164,"Mike Gesicki","MIA","TE","NORMAL","ADD",2022-10-26,1,0,1,1,10
+"139",9,"Any Given Sundae",4362887,"Justin Fields","CHI","QB","NORMAL","ADD",2022-11-02,8,0,1,8,10
+"140",9,"Any Given Sundae",3042519,"Aaron Jones","GBP","RB","NORMAL","DRAFT",2022-08-28,35,0,1,35,40
+"141",9,"Any Given Sundae",3115364,"Leonard Fournette","TBB","RB","NORMAL","DRAFT",2022-08-28,15,0,1,15,17
+"142",9,"Any Given Sundae",4040761,"Devin Singletary","BUF","RB","NORMAL","DRAFT",2022-08-28,7,0,1,7,10
+"143",9,"Any Given Sundae",4569987,"Jaylen Warren","PIT","RB","NORMAL","ADD",2022-09-14,6,0,1,6,10
+"144",9,"Any Given Sundae",3125116,"D'Onta Foreman","CAR","RB","NORMAL","ADD",2022-10-21,1,0,1,1,10
+"145",9,"Any Given Sundae",15847,"Travis Kelce","KCC","TE","NORMAL","DRAFT",2022-08-28,37,0,1,37,43
+"146",9,"Any Given Sundae",3123076,"David Njoku","CLE","TE","NORMAL","DRAFT",2022-08-28,1,0,1,1,10
 "147",9,"Any Given Sundae",4372016,"Jaylen Waddle","MIA","WR","NORMAL","DRAFT",2022-08-28,18,0,1,18,21
 "148",9,"Any Given Sundae",3116165,"Chris Godwin","TBB","WR","NORMAL","DRAFT",2022-08-28,9,0,1,9,10
 "149",9,"Any Given Sundae",2976316,"Michael Thomas","NOS","WR","NORMAL","DRAFT",2022-08-28,5,0,1,5,10
 "150",9,"Any Given Sundae",15795,"DeAndre Hopkins","ARI","WR","NORMAL","DRAFT",2022-08-28,4,6,0.647058823529412,6,10
 "151",9,"Any Given Sundae",4426354,"George Pickens","PIT","WR","NORMAL","DRAFT",2022-08-28,5,0,1,5,10
 "152",9,"Any Given Sundae",4036348,"Michael Gallup","DAL","WR","NORMAL","ADD",2022-09-18,1,0,1,1,10
-"153",9,"Any Given Sundae",16733,"Odell Beckham Jr.","FA","WR","NORMAL","ADD",2022-10-19,1,0,1,1,10
+"153",9,"Any Given Sundae",4240600,"Kadarius Toney","KCC","WR","NORMAL","ADD",2022-10-28,5,0,1,5,10
 "154",10,"Lamar Lamar Lamar",-16020,"Jets D/ST","NYJ","DST","NORMAL","ADD",2022-10-19,1,0,1,1,10
 "155",10,"Lamar Lamar Lamar",3917232,"Tyler Bass","BUF","K","NORMAL","DRAFT",2022-08-28,1,0,1,1,10
 "156",10,"Lamar Lamar Lamar",3916387,"Lamar Jackson","BAL","QB","NORMAL","DRAFT",2022-08-28,18,0,1,18,21
@@ -176,12 +176,12 @@
 "175",11,"Brenners Semicolon ",4361259,"Zach Wilson","NYJ","QB","NORMAL","DRAFT",2022-08-28,1,0,1,1,10
 "176",11,"Brenners Semicolon ",2577417,"Dak Prescott","DAL","QB","NORMAL","DRAFT",2022-08-28,7,0,1,7,10
 "177",11,"Brenners Semicolon ",15864,"Geno Smith","SEA","QB","NORMAL","ADD",2022-09-15,1,0,1,1,10
-"178",11,"Brenners Semicolon ",3119195,"Chase Edmonds","MIA","RB","NORMAL","DRAFT",2022-08-28,9,0,1,9,10
+"178",11,"Brenners Semicolon ",3119195,"Chase Edmonds","DEN","RB","NORMAL","DRAFT",2022-08-28,9,0,1,9,10
 "179",11,"Brenners Semicolon ",4360294,"Antonio Gibson","WAS","RB","NORMAL","DRAFT",2022-08-28,7,0,1,7,10
 "180",11,"Brenners Semicolon ",16782,"Jerick McKinnon","KCC","RB","NORMAL","DRAFT",2022-08-28,3,0,1,3,10
 "181",11,"Brenners Semicolon ",2576414,"Raheem Mostert","MIA","RB","NORMAL","DRAFT",2022-08-28,1,0,1,1,10
 "182",11,"Brenners Semicolon ",15835,"Zach Ertz","ARI","TE","NORMAL","DRAFT",2022-08-28,7,0,1,7,10
-"183",11,"Brenners Semicolon ",4035115,"Albert Okwuegbunam","DEN","TE","NORMAL","DRAFT",2022-08-28,1,0,1,1,10
+"183",11,"Brenners Semicolon ",4040980,"Irv Smith Jr.","MIN","TE","NORMAL","ADD",2022-10-29,1,0,1,1,10
 "184",11,"Brenners Semicolon ",4262921,"Justin Jefferson","MIN","WR","NORMAL","DRAFT",2022-08-28,60,0,1,60,69
 "185",11,"Brenners Semicolon ",3126486,"Deebo Samuel","SFO","WR","NORMAL","DRAFT",2022-08-28,42,0,1,42,48
 "186",11,"Brenners Semicolon ",4241463,"Jerry Jeudy","DEN","WR","NORMAL","DRAFT",2022-08-28,20,0,1,20,23
