@@ -155,7 +155,12 @@ trade_given<- master_trans%>%
   left_join(trade_manual,by=c("player_id_given"="trade_manual_id"))%>%
   left_join(trade_value%>%
               select(player_id,franchise_id,player_value),
-            by=c("player_id_given"="player_id","franchise_id"="franchise_id"))
+            by=c("player_id_given"="player_id","franchise_id"="franchise_id"))%>%
+  mutate(
+    player_value = case_when(player_id_given=="3916430"& trans_date=="2022-11-02" ~ as.integer(4),
+                                         TRUE ~ player_value),
+    trade_manual_index = case_when(player_id_given=="3916430"& trans_date=="2022-11-02" ~ 1,
+                                   TRUE ~trade_manual_index))
 
 
 ##Create a frame with all the players a team gave up and add grouping index to align player values  
@@ -168,7 +173,9 @@ trade_recieved<-master_trans%>%
   mutate(counter=row_number(trade_id))%>%
   ungroup(trade_id)%>%
   select(-c(trade_id,franchise_name,trade_partner,counter))%>%
-  left_join(trade_manual,by=c("player_id_recieved"="trade_manual_id"))
+  left_join(trade_manual,by=c("player_id_recieved"="trade_manual_id"))%>%
+  mutate( trade_manual_index = case_when(player_id_recieved=="3916430"& trans_date=="2022-11-02" ~ 1,
+                                         TRUE ~trade_manual_index))
 
 ##Players without a defined index recieve an index of 1
 trade_given[is.na(trade_given)] <- 1
