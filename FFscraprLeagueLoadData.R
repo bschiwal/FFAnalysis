@@ -109,10 +109,15 @@ trade_manual_id<- c(
   3918298, #Josh Allen
   3925347, #Damian Harris
   4039050, #Devin Duvarnay
-  4360438 #Brandon Aiyk
+  4360438, #Brandon Aiyk,
+  4241479, #Tua Tagovalioa
+  16800,   #Davante Adams
+  4239996, #Travis Etienne
+  4241389, #CeeDee Lamb
+  3117251  #Christian McCaffrey
 
   )
-trade_manual_index<-c(1,2,1,2,3,3)
+trade_manual_index<-c(1,2,1,2,3,3,1,2,1,1,2)
 trade_manual<-data.frame(trade_manual_index,trade_manual_id)
 rm(trade_manual_id,trade_manual_index)
 
@@ -178,7 +183,7 @@ trade<- left_join(
 
 ##First look group the given side of the transaction and split player amount by number of players received when given player is duplicated
 trade_uneven_given<- trade%>%
-  group_by(franchise_id,player_id_given,trade_manual_index)%>%
+  group_by(franchise_id,player_id_given,trade_manual_index,trans_date)%>%
   summarize(players_given = 1,
             players_recieved = n(),
             player_value_given = first(player_value),
@@ -186,24 +191,24 @@ trade_uneven_given<- trade%>%
 
 ##then group the received side and sum all given values when recieved player is duplicated
 trade_uneven_recieved<-trade%>%
-  group_by(franchise_id,player_id_recieved,trade_manual_index)%>%
+  group_by(franchise_id,player_id_recieved,trade_manual_index,trans_date)%>%
   summarize(players_recieved = 1,
             players_given=n(),
             player_value_total = sum(player_value))
 
 ##join datasets and group again by player recieved, then take total for all rows unless recieved more players than gave, then take split value.
 trade_final<-left_join(trade_uneven_recieved%>%
-                          select(-players_recieved),
-                        trade_uneven_given%>%
-                          select(-players_given),
-                        by=c("franchise_id","trade_manual_index"))%>%
+                         select(-players_recieved),
+                       trade_uneven_given%>%
+                         select(-players_given),
+                       by=c("franchise_id","trade_manual_index","trans_date"))%>%
   group_by(franchise_id,player_id_recieved)%>%
   summarize(given = first(players_given),
             recieved = first(players_recieved),
             value_total = first(player_value_total),
             value_split = first(player_value_split),
             player_value = if_else(given>1,value_total,as.integer(value_split))
-              )%>%
+  )%>%
   select(-given,-recieved,-value_total,-value_split)%>%
   rename("player_id"="player_id_recieved")
 
