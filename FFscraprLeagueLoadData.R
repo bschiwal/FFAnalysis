@@ -266,3 +266,8 @@ roster<-roster%>%
 write.csv(roster, file="data/keepervalues.csv", row.names=TRUE)
 
 
+##Final Keeper Values
+
+#finalkeeper<-roster%>%
+#  select(franchise_name,player_name,team,pos,keeper_value)
+#write.csv(finalkeeper, file="data/finalkeepervalues.csv", row.names=TRUE)
