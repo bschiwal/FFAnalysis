@@ -1,0 +1,193 @@
+"","franchise_id","franchise_name","player_id","player_name","team","pos","status","acquisition_type","trans_date","player_value","suspension","susp_factor","keeper_base","keeper_value"
+"1",1,"Ooh Baby I Like It Ra",-16005,"Browns D/ST","CLE","DST","NORMAL","DRAFT",2023-09-03,1,0,1,1,10
+"2",1,"Ooh Baby I Like It Ra",3050478,"Jake Elliott","PHI","K","NORMAL","DRAFT",2023-09-03,1,0,1,1,10
+"3",1,"Ooh Baby I Like It Ra",3918298,"Josh Allen","BUF","QB","NORMAL","DRAFT",2023-09-03,10,0,1,10,12
+"4",1,"Ooh Baby I Like It Ra",4432577,"C.J. Stroud","HOU","QB","NORMAL","DRAFT",2023-09-03,1,0,1,1,10
+"5",1,"Ooh Baby I Like It Ra",4045163,"Miles Sanders","CAR","RB","NORMAL","DRAFT",2023-09-03,13,0,1,13,15
+"6",1,"Ooh Baby I Like It Ra",3042519,"Aaron Jones","GBP","RB","NORMAL","DRAFT",2023-09-03,32,0,1,32,37
+"7",1,"Ooh Baby I Like It Ra",4242431,"Ty Chandler","MIN","RB","NORMAL","DRAFT",2023-09-03,6,0,1,6,10
+"8",1,"Ooh Baby I Like It Ra",2576414,"Raheem Mostert","MIA","RB","NORMAL","DRAFT",2023-09-03,2,0,1,2,10
+"9",1,"Ooh Baby I Like It Ra",3925347,"Damien Harris","BUF","RB","NORMAL","DRAFT",2023-09-03,1,0,1,1,10
+"10",1,"Ooh Baby I Like It Ra",3040151,"George Kittle","SFO","TE","NORMAL","DRAFT",2023-09-03,18,0,1,18,21
+"11",1,"Ooh Baby I Like It Ra",4360635,"Chigoziem Okonkwo","TEN","TE","NORMAL","DRAFT",2023-09-03,3,0,1,3,10
+"12",1,"Ooh Baby I Like It Ra",4248528,"Christian Watson","GBP","WR","NORMAL","DRAFT",2023-09-03,10,0,1,10,12
+"13",1,"Ooh Baby I Like It Ra",2976212,"Stefon Diggs","BUF","WR","NORMAL","DRAFT",2023-09-03,57,0,1,57,66
+"14",1,"Ooh Baby I Like It Ra",4374302,"Amon-Ra St. Brown","DET","WR","NORMAL","DRAFT",2023-09-03,24,0,1,24,28
+"15",1,"Ooh Baby I Like It Ra",3126486,"Deebo Samuel","SFO","WR","NORMAL","DRAFT",2023-09-03,19,0,1,19,22
+"16",1,"Ooh Baby I Like It Ra",4372414,"Elijah Moore","CLE","WR","NORMAL","DRAFT",2023-09-03,2,0,1,2,10
+"17",2,"Lambeau Leaps",-16009,"Packers D/ST","GBP","DST","NORMAL","DRAFT",2023-09-03,1,0,1,1,10
+"18",2,"Lambeau Leaps",3049899,"Younghoe Koo","ATL","K","NORMAL","DRAFT",2023-09-03,3,0,1,3,10
+"19",2,"Lambeau Leaps",3915511,"Joe Burrow","CIN","QB","NORMAL","DRAFT",2023-09-03,47,0,1,47,54
+"20",2,"Lambeau Leaps",4426875,"Sam Howell","WAS","QB","NORMAL","DRAFT",2023-09-03,3,0,1,3,10
+"21",2,"Lambeau Leaps",4427366,"Breece Hall","NYJ","RB","NORMAL","DRAFT",2023-09-03,23,0,1,23,26
+"22",2,"Lambeau Leaps",4360238,"Dameon Pierce","HOU","RB","NORMAL","DRAFT",2023-09-03,10,0,1,10,12
+"23",2,"Lambeau Leaps",4567048,"Kenneth Walker III","SEA","RB","NORMAL","DRAFT",2023-09-03,10,0,1,10,12
+"24",2,"Lambeau Leaps",4426385,"Zach Charbonnet","SEA","RB","NORMAL","DRAFT",2023-09-03,6,0,1,6,10
+"25",2,"Lambeau Leaps",4428085,"Luke Musgrave","GBP","TE","NORMAL","DRAFT",2023-09-03,1,0,1,1,10
+"26",2,"Lambeau Leaps",3051876,"Evan Engram","JAC","TE","NORMAL","DRAFT",2023-09-03,8,0,1,8,10
+"27",2,"Lambeau Leaps",3121422,"Terry McLaurin","WAS","WR","NORMAL","DRAFT",2023-09-03,12,0,1,12,14
+"28",2,"Lambeau Leaps",4047646,"A.J. Brown","PHI","WR","NORMAL","DRAFT",2023-09-03,25,0,1,25,29
+"29",2,"Lambeau Leaps",16731,"Brandin Cooks","DAL","WR","NORMAL","DRAFT",2023-09-03,14,0,1,14,16
+"30",2,"Lambeau Leaps",4429025,"Quentin Johnston","LAC","WR","NORMAL","DRAFT",2023-09-03,4,0,1,4,10
+"31",2,"Lambeau Leaps",3895856,"Christian Kirk","JAC","WR","NORMAL","DRAFT",2023-09-03,6,0,1,6,10
+"32",2,"Lambeau Leaps",4362249,"Jayden Reed","GBP","WR","NORMAL","ADD",2023-09-04,1,0,1,1,10
+"33",3,"Running Up That Hill",-16021,"Eagles D/ST","PHI","DST","NORMAL","DRAFT",2023-09-03,3,0,1,3,10
+"34",3,"Running Up That Hill",14993,"Greg Zuerlein","NYJ","K","NORMAL","DRAFT",2023-09-03,1,0,1,1,10
+"35",3,"Running Up That Hill",4040715,"Jalen Hurts","PHI","QB","NORMAL","DRAFT",2023-09-03,10,0,1,10,12
+"36",3,"Running Up That Hill",4036378,"Jordan Love","GBP","QB","NORMAL","DRAFT",2023-09-03,4,0,1,4,10
+"37",3,"Running Up That Hill",2577417,"Dak Prescott","DAL","QB","NORMAL","DRAFT",2023-09-03,2,0,1,2,10
+"38",3,"Running Up That Hill",3117251,"Christian McCaffrey","SFO","RB","NORMAL","DRAFT",2023-09-03,54,0,1,54,62
+"39",3,"Running Up That Hill",3916148,"Tony Pollard","DAL","RB","NORMAL","DRAFT",2023-09-03,10,0,1,10,12
+"40",3,"Running Up That Hill",3128720,"Nick Chubb","CLE","RB","NORMAL","DRAFT",2023-09-03,23,0,1,23,26
+"41",3,"Running Up That Hill",4258595,"Cole Kmet","CHI","TE","NORMAL","DRAFT",2023-09-03,3,0,1,3,10
+"42",3,"Running Up That Hill",3117256,"Dalton Schultz","HOU","TE","NORMAL","DRAFT",2023-09-03,2,0,1,2,10
+"43",3,"Running Up That Hill",3116406,"Tyreek Hill","MIA","WR","NORMAL","DRAFT",2023-09-03,34,0,1,34,39
+"44",3,"Running Up That Hill",4241389,"CeeDee Lamb","DAL","WR","NORMAL","DRAFT",2023-09-03,24,0,1,24,28
+"45",3,"Running Up That Hill",4430191,"Skyy Moore","KCC","WR","NORMAL","DRAFT",2023-09-03,8,0,1,8,10
+"46",3,"Running Up That Hill",4035687,"Michael Pittman Jr.","IND","WR","NORMAL","DRAFT",2023-09-03,7,0,1,7,10
+"47",3,"Running Up That Hill",3128429,"Courtland Sutton","DEN","WR","NORMAL","DRAFT",2023-09-03,3,0,1,3,10
+"48",3,"Running Up That Hill",4258173,"Nico Collins","HOU","WR","NORMAL","DRAFT",2023-09-03,3,0,1,3,10
+"49",4,"Total Luckbox",-16017,"Patriots D/ST","NEP","DST","NORMAL","DRAFT",2023-09-03,1,0,1,1,10
+"50",4,"Total Luckbox",4360234,"Evan McPherson","CIN","K","NORMAL","DRAFT",2023-09-03,10,0,1,10,12
+"51",4,"Total Luckbox",4038941,"Justin Herbert","LAC","QB","NORMAL","DRAFT",2023-09-03,21,0,1,21,24
+"52",4,"Total Luckbox",4429084,"Anthony Richardson","IND","QB","NORMAL","DRAFT",2023-09-03,10,0,1,10,12
+"53",4,"Total Luckbox",4569173,"Rhamondre Stevenson","NEP","RB","NORMAL","DRAFT",2023-09-03,10,0,1,10,12
+"54",4,"Total Luckbox",4047365,"Josh Jacobs","OAK","RB","NORMAL","DRAFT",2023-09-03,21,0,1,21,24
+"55",4,"Total Luckbox",4569987,"Jaylen Warren","PIT","RB","NORMAL","DRAFT",2023-09-03,7,0,1,7,10
+"56",4,"Total Luckbox",4259545,"D'Andre Swift","PHI","RB","NORMAL","DRAFT",2023-09-03,18,0,1,18,21
+"57",4,"Total Luckbox",4429160,"De'Von Achane","MIA","RB","NORMAL","DRAFT",2023-09-03,4,0,1,4,10
+"58",4,"Total Luckbox",3121023,"Dallas Goedert","PHI","TE","NORMAL","DRAFT",2023-09-03,10,0,1,10,12
+"59",4,"Total Luckbox",3918639,"Gerald Everett","LAC","TE","NORMAL","DRAFT",2023-09-03,1,0,1,1,10
+"60",4,"Total Luckbox",4243537,"Gabe Davis","BUF","WR","NORMAL","DRAFT",2023-09-03,18,0,1,18,21
+"61",4,"Total Luckbox",4430878,"Jaxon Smith-Njigba","SEA","WR","NORMAL","DRAFT",2023-09-03,23,0,1,23,26
+"62",4,"Total Luckbox",4429205,"Jordan Addison","MIN","WR","NORMAL","DRAFT",2023-09-03,22,0,1,22,25
+"63",4,"Total Luckbox",16733,"Odell Beckham Jr.","BAL","WR","NORMAL","DRAFT",2023-09-03,8,0,1,8,10
+"64",4,"Total Luckbox",3045144,"Tyler Boyd","CIN","WR","NORMAL","DRAFT",2023-09-03,1,0,1,1,10
+"65",5,"Lawrence  and Order CI",-16018,"Saints D/ST","NOS","DST","NORMAL","DRAFT",2023-09-03,2,0,1,2,10
+"66",5,"Lawrence  and Order CI",3055899,"Harrison Butker","KCC","K","NORMAL","DRAFT",2023-09-03,3,0,1,3,10
+"67",5,"Lawrence  and Order CI",4360310,"Trevor Lawrence","JAC","QB","NORMAL","DRAFT",2023-09-03,10,0,1,10,12
+"68",5,"Lawrence  and Order CI",3122840,"Deshaun Watson","CLE","QB","NORMAL","DRAFT",2023-09-03,10,0,1,10,12
+"69",5,"Lawrence  and Order CI",3043078,"Derrick Henry","TEN","RB","NORMAL","DRAFT",2023-09-03,54,0,1,54,62
+"70",5,"Lawrence  and Order CI",4035538,"David Montgomery","DET","RB","NORMAL","DRAFT",2023-09-03,23,0,1,23,26
+"71",5,"Lawrence  and Order CI",3054850,"Alvin Kamara","NOS","RB","NORMAL","DRAFT",2023-09-03,12,3,0.785714285714286,15,17
+"72",5,"Lawrence  and Order CI",4240021,"Cam Akers","LAR","RB","NORMAL","DRAFT",2023-09-03,13,0,1,13,15
+"73",5,"Lawrence  and Order CI",4361411,"Pat Freiermuth","PIT","TE","NORMAL","DRAFT",2023-09-03,11,0,1,11,13
+"74",5,"Lawrence  and Order CI",3929645,"Juwan Johnson","NOS","TE","NORMAL","DRAFT",2023-09-03,1,0,1,1,10
+"75",5,"Lawrence  and Order CI",3915416,"DJ Moore","CHI","WR","NORMAL","DRAFT",2023-09-03,24,0,1,24,28
+"76",5,"Lawrence  and Order CI",4241478,"DeVonta Smith","PHI","WR","NORMAL","DRAFT",2023-09-03,10,0,1,10,12
+"77",5,"Lawrence  and Order CI",2577327,"Tyler Lockett","SEA","WR","NORMAL","DRAFT",2023-09-03,10,0,1,10,12
+"78",5,"Lawrence  and Order CI",4241463,"Jerry Jeudy","DEN","WR","NORMAL","DRAFT",2023-09-03,10,0,1,10,12
+"79",5,"Lawrence  and Order CI",2976316,"Michael Thomas","NOS","WR","NORMAL","DRAFT",2023-09-03,6,0,1,6,10
+"80",5,"Lawrence  and Order CI",4242540,"Isaiah Hodgins","NYG","WR","NORMAL","ADD",2023-09-04,1,0,1,1,10
+"81",6,"Team Da Rejects",-16023,"Steelers D/ST","PIT","DST","NORMAL","DRAFT",2023-09-03,1,0,1,1,10
+"82",6,"Team Da Rejects",15683,"Justin Tucker","BAL","K","NORMAL","DRAFT",2023-09-03,7,0,1,7,10
+"83",6,"Team Da Rejects",3975763,"Greg Joseph","MIN","K","NORMAL","DRAFT",2023-09-03,2,0,1,2,10
+"84",6,"Team Da Rejects",8439,"Aaron Rodgers","NYJ","QB","NORMAL","DRAFT",2023-09-03,10,0,1,10,12
+"85",6,"Team Da Rejects",14880,"Kirk Cousins","MIN","QB","NORMAL","DRAFT",2023-09-03,4,0,1,4,10
+"86",6,"Team Da Rejects",3051392,"Ezekiel Elliott","NEP","RB","NORMAL","DRAFT",2023-09-03,8,0,1,8,10
+"87",6,"Team Da Rejects",3116593,"Dalvin Cook","NYJ","RB","NORMAL","DRAFT",2023-09-03,10,0,1,10,12
+"88",6,"Team Da Rejects",3139925,"Rashaad Penny","PHI","RB","NORMAL","DRAFT",2023-09-03,3,0,1,3,10
+"89",6,"Team Da Rejects",4360248,"Kyle Pitts","ATL","TE","NORMAL","DRAFT",2023-09-03,11,0,1,11,13
+"90",6,"Team Da Rejects",4430027,"Sam LaPorta","DET","TE","NORMAL","DRAFT",2023-09-03,5,0,1,5,10
+"91",6,"Team Da Rejects",2976499,"Amari Cooper","CLE","WR","NORMAL","DRAFT",2023-09-03,10,0,1,10,12
+"92",6,"Team Da Rejects",4047650,"DK Metcalf","SEA","WR","NORMAL","DRAFT",2023-09-03,12,0,1,12,14
+"93",6,"Team Da Rejects",4362628,"Ja'Marr Chase","CIN","WR","NORMAL","DRAFT",2023-09-03,65,0,1,65,75
+"94",6,"Team Da Rejects",15818,"Keenan Allen","LAC","WR","NORMAL","DRAFT",2023-09-03,25,0,1,25,29
+"95",6,"Team Da Rejects",4426502,"Drake London","ATL","WR","NORMAL","DRAFT",2023-09-03,15,0,1,15,17
+"96",6,"Team Da Rejects",3916433,"Jakobi Meyers","OAK","WR","NORMAL","DRAFT",2023-09-03,2,0,1,2,10
+"97",7,"Team Roy",-16004,"Bengals D/ST","CIN","DST","NORMAL","DRAFT",2023-09-03,1,0,1,1,10
+"98",7,"Team Roy",4362081,"Cameron Dicker","LAC","K","NORMAL","DRAFT",2023-09-03,1,0,1,1,10
+"99",7,"Team Roy",3139477,"Patrick Mahomes","KCC","QB","NORMAL","DRAFT",2023-09-03,21,0,1,21,24
+"100",7,"Team Roy",3046779,"Jared Goff","DET","QB","NORMAL","DRAFT",2023-09-03,1,0,1,1,10
+"101",7,"Team Roy",4048244,"Alexander Mattison","MIN","RB","NORMAL","DRAFT",2023-09-03,31,0,1,31,36
+"102",7,"Team Roy",3929630,"Saquon Barkley","NYG","RB","NORMAL","DRAFT",2023-09-03,57,0,1,57,66
+"103",7,"Team Roy",3045147,"James Conner","ARI","RB","NORMAL","DRAFT",2023-09-03,20,0,1,20,23
+"104",7,"Team Roy",4241555,"Elijah Mitchell","SFO","RB","NORMAL","DRAFT",2023-09-03,1,0,1,1,10
+"105",7,"Team Roy",4429013,"Tank Bigsby","JAC","RB","NORMAL","DRAFT",2023-09-03,1,0,1,1,10
+"106",7,"Team Roy",3116365,"Mark Andrews","BAL","TE","NORMAL","DRAFT",2023-09-03,28,0,1,28,32
+"107",7,"Team Roy",3045138,"Mike Williams","LAC","WR","NORMAL","DRAFT",2023-09-03,23,0,1,23,26
+"108",7,"Team Roy",4360438,"Brandon Aiyuk","SFO","WR","NORMAL","DRAFT",2023-09-03,10,0,1,10,12
+"109",7,"Team Roy",3115394,"DJ Chark Jr.","CAR","WR","NORMAL","DRAFT",2023-09-03,1,0,1,1,10
+"110",7,"Team Roy",3121427,"Curtis Samuel","WAS","WR","NORMAL","DRAFT",2023-09-03,1,0,1,1,10
+"111",7,"Team Roy",4036348,"Michael Gallup","DAL","WR","NORMAL","DRAFT",2023-09-03,1,0,1,1,10
+"112",7,"Team Roy",4360939,"Rashod Bateman","BAL","WR","NORMAL","DRAFT",2023-09-03,1,0,1,1,10
+"113",8,"The  Vindicators",-16020,"Jets D/ST","NYJ","DST","NORMAL","DRAFT",2023-09-03,1,0,1,1,10
+"114",8,"The  Vindicators",2473037,"Jason Myers","SEA","K","NORMAL","DRAFT",2023-09-03,1,0,1,1,10
+"115",8,"The  Vindicators",4241479,"Tua Tagovailoa","MIA","QB","NORMAL","DRAFT",2023-09-03,3,0,1,3,10
+"116",8,"The  Vindicators",14881,"Russell Wilson","DEN","QB","NORMAL","DRAFT",2023-09-03,2,0,1,2,10
+"117",8,"The  Vindicators",4697815,"Rachaad White","TBB","RB","NORMAL","DRAFT",2023-09-03,10,0,1,10,12
+"118",8,"The  Vindicators",4035886,"Khalil Herbert","CHI","RB","NORMAL","DRAFT",2023-09-03,10,0,1,10,12
+"119",8,"The  Vindicators",4239996,"Travis Etienne Jr.","JAC","RB","NORMAL","DRAFT",2023-09-03,24,0,1,24,28
+"120",8,"The  Vindicators",4430807,"Bijan Robinson","ATL","RB","NORMAL","DRAFT",2023-09-03,53,0,1,53,61
+"121",8,"The  Vindicators",3059915,"Kareem Hunt","FA","RB","NORMAL","DRAFT",2023-09-03,1,0,1,1,10
+"122",8,"The  Vindicators",4036133,"T.J. Hockenson","MIN","TE","NORMAL","DRAFT",2023-09-03,10,0,1,10,12
+"123",8,"The  Vindicators",2576925,"Darren Waller","NYG","TE","NORMAL","DRAFT",2023-09-03,10,0,1,10,12
+"124",8,"The  Vindicators",3932905,"Diontae Johnson","PIT","WR","NORMAL","DRAFT",2023-09-03,18,0,1,18,21
+"125",8,"The  Vindicators",3925357,"Calvin Ridley","JAC","WR","NORMAL","DRAFT",2023-09-03,32,0,1,32,37
+"126",8,"The  Vindicators",16737,"Mike Evans","TBB","WR","NORMAL","DRAFT",2023-09-03,9,0,1,9,10
+"127",8,"The  Vindicators",4429615,"Zay Flowers","BAL","WR","NORMAL","DRAFT",2023-09-03,15,0,1,15,17
+"128",8,"The  Vindicators",4240600,"Kadarius Toney","KCC","WR","NORMAL","DRAFT",2023-09-03,1,0,1,1,10
+"129",9,"Any Given Sundae",-16025,"49ers D/ST","SFO","DST","NORMAL","DRAFT",2023-09-03,7,0,1,7,10
+"130",9,"Any Given Sundae",3051909,"Daniel Carlson","OAK","K","NORMAL","DRAFT",2023-09-03,5,0,1,5,10
+"131",9,"Any Given Sundae",4362887,"Justin Fields","CHI","QB","NORMAL","DRAFT",2023-09-03,10,0,1,10,12
+"132",9,"Any Given Sundae",4379399,"James Cook","BUF","RB","NORMAL","DRAFT",2023-09-03,10,0,1,10,12
+"133",9,"Any Given Sundae",4429795,"Jahmyr Gibbs","DET","RB","NORMAL","DRAFT",2023-09-03,35,0,1,35,40
+"134",9,"Any Given Sundae",4361579,"Javonte Williams","DEN","RB","NORMAL","DRAFT",2023-09-03,7,0,1,7,10
+"135",9,"Any Given Sundae",16782,"Jerick McKinnon","KCC","RB","NORMAL","DRAFT",2023-09-03,6,0,1,6,10
+"136",9,"Any Given Sundae",4040761,"Devin Singletary","HOU","RB","NORMAL","DRAFT",2023-09-03,3,0,1,3,10
+"137",9,"Any Given Sundae",4373626,"Tyler Allgeier","ATL","RB","NORMAL","DRAFT",2023-09-03,2,0,1,2,10
+"138",9,"Any Given Sundae",15847,"Travis Kelce","KCC","TE","NORMAL","DRAFT",2023-09-03,43,0,1,43,49
+"139",9,"Any Given Sundae",4426354,"George Pickens","PIT","WR","NORMAL","DRAFT",2023-09-03,10,0,1,10,12
+"140",9,"Any Given Sundae",4372016,"Jaylen Waddle","MIA","WR","NORMAL","DRAFT",2023-09-03,21,0,1,21,24
+"141",9,"Any Given Sundae",15795,"DeAndre Hopkins","TEN","WR","NORMAL","DRAFT",2023-09-03,10,0,1,10,12
+"142",9,"Any Given Sundae",3116165,"Chris Godwin","TBB","WR","NORMAL","DRAFT",2023-09-03,10,0,1,10,12
+"143",9,"Any Given Sundae",3120348,"JuJu Smith-Schuster","NEP","WR","NORMAL","DRAFT",2023-09-03,3,0,1,3,10
+"144",9,"Any Given Sundae",4426485,"Jonathan Mingo","CAR","WR","NORMAL","DRAFT",2023-09-03,2,0,1,2,10
+"145",10,"Lamar Lamar Lamar",-16006,"Cowboys D/ST","DAL","DST","NORMAL","DRAFT",2023-09-03,3,0,1,3,10
+"146",10,"Lamar Lamar Lamar",3917232,"Tyler Bass","BUF","K","NORMAL","DRAFT",2023-09-03,1,0,1,1,10
+"147",10,"Lamar Lamar Lamar",3916387,"Lamar Jackson","BAL","QB","NORMAL","DRAFT",2023-09-03,21,0,1,21,24
+"148",10,"Lamar Lamar Lamar",4685720,"Bryce Young","CAR","QB","NORMAL","DRAFT",2023-09-03,4,0,1,4,10
+"149",10,"Lamar Lamar Lamar",4241474,"Brian Robinson Jr.","WAS","RB","NORMAL","DRAFT",2023-09-03,10,0,1,10,12
+"150",10,"Lamar Lamar Lamar",2980453,"Jamaal Williams","NOS","RB","NORMAL","DRAFT",2023-09-03,10,0,1,10,12
+"151",10,"Lamar Lamar Lamar",4242335,"Jonathan Taylor","IND","RB","NORMAL","DRAFT",2023-09-03,30,0,1,30,34
+"152",10,"Lamar Lamar Lamar",3116385,"Joe Mixon","CIN","RB","NORMAL","DRAFT",2023-09-03,41,0,1,41,47
+"153",10,"Lamar Lamar Lamar",3116389,"Samaje Perine","DEN","RB","NORMAL","DRAFT",2023-09-03,5,0,1,5,10
+"154",10,"Lamar Lamar Lamar",4241985,"J.K. Dobbins","BAL","RB","NORMAL","DRAFT",2023-09-03,14,0,1,14,16
+"155",10,"Lamar Lamar Lamar",4385690,"Dalton Kincaid","BUF","TE","NORMAL","DRAFT",2023-09-03,12,0,1,12,14
+"156",10,"Lamar Lamar Lamar",4361409,"Jahan Dotson","WAS","WR","NORMAL","DRAFT",2023-09-03,10,0,1,10,12
+"157",10,"Lamar Lamar Lamar",4426388,"Jameson Williams","DET","WR","NORMAL","DRAFT",2023-09-03,10,0,1,10,12
+"158",10,"Lamar Lamar Lamar",4361370,"Chris Olave","NOS","WR","NORMAL","DRAFT",2023-09-03,10,0,1,10,12
+"159",10,"Lamar Lamar Lamar",4241372,"Marquise Brown","ARI","WR","NORMAL","DRAFT",2023-09-03,9,0,1,9,10
+"160",10,"Lamar Lamar Lamar",4686472,"Marvin Mims Jr.","DEN","WR","NORMAL","DRAFT",2023-09-03,3,0,1,3,10
+"161",11,"Brenners Semicolon ",-16002,"Bills D/ST","BUF","DST","NORMAL","DRAFT",2023-09-03,3,0,1,3,10
+"162",11,"Brenners Semicolon ",-16016,"Vikings D/ST","MIN","DST","NORMAL","DRAFT",2023-09-03,1,0,1,1,10
+"163",11,"Brenners Semicolon ",4249087,"Matt Gay","IND","K","NORMAL","DRAFT",2023-09-03,1,0,1,1,10
+"164",11,"Brenners Semicolon ",10621,"Nick Folk","TEN","K","NORMAL","DRAFT",2023-09-03,1,0,1,1,10
+"165",11,"Brenners Semicolon ",3917792,"Daniel Jones","NYG","QB","NORMAL","DRAFT",2023-09-03,2,0,1,2,10
+"166",11,"Brenners Semicolon ",15864,"Geno Smith","SEA","QB","NORMAL","DRAFT",2023-09-03,1,0,1,1,10
+"167",11,"Brenners Semicolon ",3068267,"Austin Ekeler","LAC","RB","NORMAL","DRAFT",2023-09-03,69,0,1,69,79
+"168",11,"Brenners Semicolon ",4360294,"Antonio Gibson","WAS","RB","NORMAL","DRAFT",2023-09-03,8,0,1,8,10
+"169",11,"Brenners Semicolon ",4426386,"Roschon Johnson","CHI","RB","NORMAL","DRAFT",2023-09-03,2,0,1,2,10
+"170",11,"Brenners Semicolon ",3123076,"David Njoku","CLE","TE","NORMAL","DRAFT",2023-09-03,16,0,1,16,18
+"171",11,"Brenners Semicolon ",2573401,"Tyler Higbee","LAR","TE","NORMAL","DRAFT",2023-09-03,1,0,1,1,10
+"172",11,"Brenners Semicolon ",4262921,"Justin Jefferson","MIN","WR","NORMAL","DRAFT",2023-09-03,69,0,1,69,79
+"173",11,"Brenners Semicolon ",4567156,"Treylon Burks","TEN","WR","NORMAL","DRAFT",2023-09-03,8,0,1,8,10
+"174",11,"Brenners Semicolon ",16460,"Adam Thielen","CAR","WR","NORMAL","DRAFT",2023-09-03,3,0,1,3,10
+"175",11,"Brenners Semicolon ",3128390,"Allen Lazard","NYJ","WR","NORMAL","DRAFT",2023-09-03,1,0,1,1,10
+"176",11,"Brenners Semicolon ",3916566,"K.J. Osborn","MIN","WR","NORMAL","DRAFT",2023-09-03,1,0,1,1,10
+"177",12,"Böblingen Ballers",-16015,"Dolphins D/ST","MIA","DST","NORMAL","DRAFT",2023-09-03,1,0,1,1,10
+"178",12,"Böblingen Ballers",12460,"Graham Gano","NYG","K","NORMAL","DRAFT",2023-09-03,1,0,1,1,10
+"179",12,"Böblingen Ballers",4361741,"Brock Purdy","SFO","QB","NORMAL","DRAFT",2023-09-03,10,0,1,10,12
+"180",12,"Böblingen Ballers",4241457,"Najee Harris","PIT","RB","NORMAL","DRAFT",2023-09-03,48,0,1,48,55
+"181",12,"Böblingen Ballers",4361529,"Isiah Pacheco","KCC","RB","NORMAL","DRAFT",2023-09-03,10,0,1,10,12
+"182",12,"Böblingen Ballers",3051926,"Gus Edwards","BAL","RB","NORMAL","DRAFT",2023-09-03,1,0,1,1,10
+"183",12,"Böblingen Ballers",4371733,"Kenneth Gainwell","PHI","RB","NORMAL","DRAFT",2023-09-03,1,0,1,1,10
+"184",12,"Böblingen Ballers",4240455,"Deon Jackson","IND","RB","NORMAL","DRAFT",2023-09-03,1,0,1,1,10
+"185",12,"Böblingen Ballers",4569609,"Evan Hull","IND","RB","NORMAL","DRAFT",2023-09-03,1,0,1,1,10
+"186",12,"Böblingen Ballers",15835,"Zach Ertz","ARI","TE","NORMAL","DRAFT",2023-09-03,1,0,1,1,10
+"187",12,"Böblingen Ballers",4569618,"Garrett Wilson","NYJ","WR","NORMAL","DRAFT",2023-09-03,10,0,1,10,12
+"188",12,"Böblingen Ballers",4239993,"Tee Higgins","CIN","WR","NORMAL","DRAFT",2023-09-03,23,0,1,23,26
+"189",12,"Böblingen Ballers",16800,"Davante Adams","OAK","WR","NORMAL","DRAFT",2023-09-03,43,0,1,43,49
+"190",12,"Böblingen Ballers",2977187,"Cooper Kupp","LAR","WR","NORMAL","DRAFT",2023-09-03,45,0,1,45,52
+"191",12,"Böblingen Ballers",4372485,"Rondale Moore","ARI","WR","NORMAL","DRAFT",2023-09-03,1,0,1,1,10
+"192",12,"Böblingen Ballers",4040655,"Darnell Mooney","CHI","WR","NORMAL","DRAFT",2023-09-03,1,0,1,1,10

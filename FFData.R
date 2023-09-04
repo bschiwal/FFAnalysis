@@ -5,8 +5,8 @@ library(tidyverse)
 library(ggrepel)
 
 ###Load play by play data
-seasons<- 2021
-pbp<- read.csv("data/pbp_history.csv")%>%
+seasons<- 2022
+pbp<- read.csv("pbp_history.csv")%>%
   filter(season==seasons)
 
 
@@ -42,7 +42,7 @@ ggplot(qbstats,aes(x=points3,y=comp_pct)) +
   geom_point()+
   geom_hline(yintercept=mean(qbstats$comp_pct),color="red",linetype="dashed")+
   geom_vline(xintercept=avgqbadj,color="blue",linetype="dashed")+
-  ggtitle("Quarterback Points Adjustment 2021")+
+  ggtitle("Quarterback Points Adjustment 2022")+
   xlab("Point Adjustment")+
   ylab("Completion Percentage")+
   labs(caption= "Made by @BSchiwal, Datasource = @NFLFastr",
@@ -62,7 +62,7 @@ ggplot(qbstats,aes(x=attempts,y=completions))+
   geom_text(aes(20,35,label=paste("Average QB Completions =",avgqbcomp*100,"%")),color="red", check_overlap = TRUE)+
   scale_color_manual(values=c("red3","forestgreen"))+
   scale_alpha(guide=FALSE)+
-  ggtitle("Quarterback Points Adjustment 2021")+
+  ggtitle("Quarterback Points Adjustment 2022")+
   xlab("Pass Attempts")+
   ylab("Completions")+
   labs(caption= "Made by @BSchiwal, Datasource = @NFLFastr",
@@ -103,7 +103,7 @@ ggplot(wrstats,aes(x=adj,y=comp_pct)) +
   geom_point()+
   geom_hline(yintercept=mean(wrstats$comp_pct),color="red",linetype="dashed")+
   geom_vline(xintercept=avgwradj,color="blue",linetype="dashed")+
-  ggtitle("Reciever Points Adjustment 2021")+
+  ggtitle("Reciever Points Adjustment 2022")+
   xlab("Point Adjustment")+
   ylab("Completion Percentage When Targeted")+
   labs(caption= "Made by @BSchiwal, Datasource = @NFLFastr",
@@ -125,7 +125,7 @@ ggplot(wrstats,aes(x=target,y=reception))+
   geom_text(aes(5,10,label=paste("Average WR Completions =",avgwrcomp*100,"%")),color="red", check_overlap = TRUE)+
   scale_color_manual(values=c("red3","forestgreen"))+
   scale_alpha(guide=FALSE)+
-  ggtitle("Receiver Points Adjustment 2021")+
+  ggtitle("Receiver Points Adjustment 2022")+
   xlab("Targets")+
   ylab("Receptions")+
   labs(caption= "Made by @BSchiwal, Datasource = @NFLFastr",
@@ -166,7 +166,7 @@ ggplot(rbstats,aes(x=pts_adj,y=ydsperattpt)) +
   geom_point()+
   geom_hline(yintercept=rbypa,color="red",linetype="dashed")+
   geom_vline(xintercept=rbavgadj,color="blue",linetype="dashed")+
-  ggtitle("Rusher Points Adjustment 2021")+
+  ggtitle("Rusher Points Adjustment 2022")+
   xlab("Point Adjustment")+
   ylab("Yards per Attempt")+
   labs(caption= "Made by @BSchiwal, Datasource = @NFLFastr",
@@ -188,7 +188,7 @@ ggplot(rbstats,aes(x=attempt,y=yards))+
   geom_text(aes(5,10,label=paste("Average RB Completions =",avgwrcomp*100,"%")),color="red", check_overlap = TRUE)+
   scale_color_manual(values=c("red3","forestgreen"))+
   scale_alpha(guide=FALSE)+
-  ggtitle("Rusher Points Adjustment 2021")+
+  ggtitle("Rusher Points Adjustment 2022")+
   xlab("Attempts")+
   ylab("Yards")+
   labs(caption= "Made by @BSchiwal, Datasource = @NFLFastr",
@@ -333,7 +333,7 @@ rushing_pts_tot <- rushing_pts_pg%>%
 rm(pbp)
 ###Build Combined Table#####
 ###Create Combined Table per Game
-players<-read.csv("data/player_history.csv")%>%
+players<-read.csv("player_history.csv")%>%
   filter(season==seasons)
 passers<-passing_pts_pg%>%
   select(gsis_id,name,game_id)
@@ -406,7 +406,7 @@ ggplot(ffpts_tot,aes(y=pts_tot,x=pts_avg, fill=position))+
   geom_point(aes(colour=position))+
   scale_y_continuous(limits=c(0,500))+
   scale_x_continuous(limits=c(0,40))+
-  ggtitle("2021 Fantasy Points per Player")+
+  ggtitle("2022 Fantasy Points per Player")+
   xlab("Avg Points per Game")+
   ylab("Total Season Points")+
   labs(subtitle="New Scoring Method",
@@ -422,7 +422,7 @@ ggplot(ffpts_tot,aes(y=pts_std_tot,x=pts_std_avg, fill=position))+
   geom_point(aes(colour=position))+
   scale_y_continuous(limits=c(0,500))+
   scale_x_continuous(limits=c(0,40))+
-  ggtitle("2021 Fantasy Points per Player")+
+  ggtitle("2022 Fantasy Points per Player")+
   xlab("Avg Points per Game")+
   ylab("Total Season Points")+
   labs(subtitle="Standard PPR Scoring Method",
