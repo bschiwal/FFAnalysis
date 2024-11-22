@@ -1,0 +1,205 @@
+"","franchise_id","franchise_name","player_id","player_name","team","pos","status","acquisition_type","trans_date","player_value","suspension","susp_factor","keeper_base","keeper_value"
+"1",1,"Ooh Baby I Like It Ra",-16034,"Texans D/ST","HOU","DST","NORMAL","ADD",2024-10-30,2,0,1,2,10
+"2",1,"Ooh Baby I Like It Ra",4567104,"Will Reichard","MIN","K","NORMAL","DRAFT",2024-09-01,4,0,1,4,10
+"3",1,"Ooh Baby I Like It Ra",17427,"Cairo Santos","CHI","K","NORMAL","ADD",2024-11-06,4,0,1,4,10
+"4",1,"Ooh Baby I Like It Ra",3918298,"Josh Allen","BUF","QB","NORMAL","DRAFT",2024-09-01,12,0,1,12,14
+"5",1,"Ooh Baby I Like It Ra",4426348,"Jayden Daniels","WAS","QB","NORMAL","DRAFT",2024-09-01,13,0,1,13,15
+"6",1,"Ooh Baby I Like It Ra",4427366,"Breece Hall","NYJ","RB","NORMAL","DRAFT",2024-09-01,10,0,1,10,12
+"7",1,"Ooh Baby I Like It Ra",2576414,"Raheem Mostert","MIA","RB","NORMAL","DRAFT",2024-09-01,10,0,1,10,12
+"8",1,"Ooh Baby I Like It Ra",3116385,"Joe Mixon","HOU","RB","NORMAL","DRAFT",2024-09-01,32,0,1,32,37
+"9",1,"Ooh Baby I Like It Ra",4569987,"Jaylen Warren","PIT","RB","NORMAL","TRADE",2024-11-20,7,0,1,7,10
+"10",1,"Ooh Baby I Like It Ra",3116365,"Mark Andrews","BAL","TE","NORMAL","DRAFT",2024-09-01,26,0,1,26,30
+"11",1,"Ooh Baby I Like It Ra",3054212,"Jonnu Smith","MIA","TE","NORMAL","ADD",2024-11-21,3,0,1,3,10
+"12",1,"Ooh Baby I Like It Ra",4248528,"Christian Watson","GBP","WR","NORMAL","DRAFT",2024-09-01,12,0,1,12,14
+"13",1,"Ooh Baby I Like It Ra",3126486,"Deebo Samuel Sr.","SFO","WR","NORMAL","DRAFT",2024-09-01,22,0,1,22,25
+"14",1,"Ooh Baby I Like It Ra",4374302,"Amon-Ra St. Brown","DET","WR","NORMAL","DRAFT",2024-09-01,28,0,1,28,32
+"15",1,"Ooh Baby I Like It Ra",4373678,"Khalil Shakir","BUF","WR","NORMAL","DRAFT",2024-09-01,2,0,1,2,10
+"16",1,"Ooh Baby I Like It Ra",4243537,"Gabe Davis","JAC","WR","NORMAL","DRAFT",2024-09-01,2,0,1,2,10
+"17",1,"Ooh Baby I Like It Ra",2976212,"Stefon Diggs","HOU","WR","NORMAL","ADD",2024-10-30,8,0,1,8,10
+"18",2,"Lambeau Leaps of Faith",-16009,"Packers D/ST","GBP","DST","NORMAL","DRAFT",2024-09-01,1,0,1,1,10
+"19",2,"Lambeau Leaps of Faith",-16019,"Giants D/ST","NYG","DST","NORMAL","ADD",2024-11-06,1,0,1,1,10
+"20",2,"Lambeau Leaps of Faith",4689936,"Jake Bates","DET","K","NORMAL","ADD",2024-10-30,1,0,1,1,10
+"21",2,"Lambeau Leaps of Faith",4426338,"Bo Nix","DEN","QB","NORMAL","ADD",2024-09-25,1,0,1,1,10
+"22",2,"Lambeau Leaps of Faith",4429084,"Anthony Richardson","IND","QB","NORMAL","ADD",2024-11-20,1,0,1,1,10
+"23",2,"Lambeau Leaps of Faith",4567048,"Kenneth Walker III","SEA","RB","NORMAL","DRAFT",2024-09-01,12,0,1,12,14
+"24",2,"Lambeau Leaps of Faith",4678008,"Jonathon Brooks","CAR","RB","NORMAL","DRAFT",2024-09-01,13,6,0.647058823529412,20,23
+"25",2,"Lambeau Leaps of Faith",4241416,"Chuba Hubbard","CAR","RB","NORMAL","DRAFT",2024-09-01,3,0,1,3,10
+"26",2,"Lambeau Leaps of Faith",4428557,"Tyjae Spears","TEN","RB","NORMAL","ADD",2024-09-21,1,0,1,1,10
+"27",2,"Lambeau Leaps of Faith",3051876,"Evan Engram","JAC","TE","NORMAL","DRAFT",2024-09-01,10,0,1,10,12
+"28",2,"Lambeau Leaps of Faith",4572680,"Tucker Kraft","GBP","TE","NORMAL","ADD",2024-10-02,3,0,1,3,10
+"29",2,"Lambeau Leaps of Faith",3121422,"Terry McLaurin","WAS","WR","NORMAL","DRAFT",2024-09-01,14,0,1,14,16
+"30",2,"Lambeau Leaps of Faith",4047646,"A.J. Brown","PHI","WR","NORMAL","DRAFT",2024-09-01,29,0,1,29,33
+"31",2,"Lambeau Leaps of Faith",4595348,"Malik Nabers","NYG","WR","NORMAL","DRAFT",2024-09-01,31,0,1,31,36
+"32",2,"Lambeau Leaps of Faith",4683062,"Xavier Worthy","KCC","WR","NORMAL","DRAFT",2024-09-01,20,0,1,20,23
+"33",2,"Lambeau Leaps of Faith",4428850,"Dontayvion Wicks","GBP","WR","NORMAL","ADD",2024-10-02,6,0,1,6,10
+"34",3,"LaPorta Potties",-16002,"Bills D/ST","BUF","DST","NORMAL","ADD",2024-11-21,1,0,1,1,10
+"35",3,"LaPorta Potties",-16015,"Dolphins D/ST","MIA","DST","NORMAL","ADD",2024-11-21,1,0,1,1,10
+"36",3,"LaPorta Potties",3150744,"Chase McLaughlin","TBB","K","NORMAL","ADD",2024-10-02,1,0,1,1,10
+"37",3,"LaPorta Potties",4259619,"Blake Grupe","NOS","K","NORMAL","ADD",2024-11-13,1,0,1,1,10
+"38",3,"LaPorta Potties",4040715,"Jalen Hurts","PHI","QB","NORMAL","DRAFT",2024-09-01,12,0,1,12,14
+"39",3,"LaPorta Potties",3912547,"Sam Darnold","MIN","QB","NORMAL","ADD",2024-09-12,1,0,1,1,10
+"40",3,"LaPorta Potties",4432577,"C.J. Stroud","HOU","QB","NORMAL","ADD",2024-11-07,1,0,1,1,10
+"41",3,"LaPorta Potties",3117251,"Christian McCaffrey","SFO","RB","NORMAL","DRAFT",2024-09-01,62,0,1,62,71
+"42",3,"LaPorta Potties",4048244,"Alexander Mattison","OAK","RB","NORMAL","ADD",2024-09-11,5,0,1,5,10
+"43",3,"LaPorta Potties",4373626,"Tyler Allgeier","ATL","RB","NORMAL","ADD",2024-10-16,1,0,1,1,10
+"44",3,"LaPorta Potties",4429795,"Jahmyr Gibbs","DET","RB","NORMAL","TRADE",2024-09-17,39,0,1,39,45
+"45",3,"LaPorta Potties",4430027,"Sam LaPorta","DET","TE","NORMAL","DRAFT",2024-09-01,10,0,1,10,12
+"46",3,"LaPorta Potties",4361050,"Isaiah Likely","BAL","TE","NORMAL","ADD",2024-10-03,3,0,1,3,10
+"47",3,"LaPorta Potties",4262921,"Justin Jefferson","MIN","WR","NORMAL","DRAFT",2024-09-01,16,0,1,16,18
+"48",3,"LaPorta Potties",4241389,"CeeDee Lamb","DAL","WR","NORMAL","DRAFT",2024-09-01,28,0,1,28,32
+"49",3,"LaPorta Potties",4258173,"Nico Collins","HOU","WR","NORMAL","DRAFT",2024-09-01,10,0,1,10,12
+"50",3,"LaPorta Potties",4241463,"Jerry Jeudy","CLE","WR","NORMAL","DRAFT",2024-09-01,4,0,1,4,10
+"51",4,"Ladd to be here",-16003,"Bears D/ST","CHI","DST","NORMAL","ADD",2024-10-02,4,0,1,4,10
+"52",4,"Ladd to be here",-16025,"49ers D/ST","SFO","DST","NORMAL","TRADE",2024-11-20,10,0,1,10,12
+"53",4,"Ladd to be here",3953687,"Brandon Aubrey","DAL","K","NORMAL","DRAFT",2024-09-01,4,0,1,4,10
+"54",4,"Ladd to be here",4038941,"Justin Herbert","LAC","QB","NORMAL","DRAFT",2024-09-01,24,0,1,24,28
+"55",4,"Ladd to be here",3917315,"Kyler Murray","ARI","QB","NORMAL","DRAFT",2024-09-01,11,0,1,11,13
+"56",4,"Ladd to be here",4047365,"Josh Jacobs","GBP","RB","NORMAL","DRAFT",2024-09-01,24,0,1,24,28
+"57",4,"Ladd to be here",4429160,"De'Von Achane","MIA","RB","NORMAL","DRAFT",2024-09-01,10,0,1,10,12
+"58",4,"Ladd to be here",4038441,"Justice Hill","BAL","RB","NORMAL","ADD",2024-11-21,1,0,1,1,10
+"59",4,"Ladd to be here",4045163,"Miles Sanders","CAR","RB","NORMAL","TRADE",2024-11-20,10,0,1,10,12
+"60",4,"Ladd to be here",2468609,"Taysom Hill","NOS","TE","NORMAL","DRAFT",2024-09-01,1,0,1,1,10
+"61",4,"Ladd to be here",3117256,"Dalton Schultz","HOU","TE","NORMAL","ADD",2024-10-24,1,0,1,1,10
+"62",4,"Ladd to be here",4432708,"Marvin Harrison Jr.","ARI","WR","NORMAL","DRAFT",2024-09-01,36,0,1,36,41
+"63",4,"Ladd to be here",4612826,"Ladd McConkey","LAC","WR","NORMAL","DRAFT",2024-09-01,13,0,1,13,15
+"64",4,"Ladd to be here",4432773,"Brian Thomas Jr.","JAC","WR","NORMAL","DRAFT",2024-09-01,13,0,1,13,15
+"65",4,"Ladd to be here",4366031,"Tank Dell","HOU","WR","NORMAL","ADD",2024-10-06,3,0,1,3,10
+"66",4,"Ladd to be here",3915416,"DJ Moore","CHI","WR","NORMAL","TRADE",2024-10-30,11,0,1,11,13
+"67",5,"Get Goff my Lawn ",-16007,"Broncos D/ST","DEN","DST","NORMAL","ADD",2024-10-02,1,0,1,1,10
+"68",5,"Get Goff my Lawn ",-16008,"Lions D/ST","DET","DST","NORMAL","ADD",2024-10-31,1,0,1,1,10
+"69",5,"Get Goff my Lawn ",3821683,"Austin Seibert","WAS","K","NORMAL","ADD",2024-09-25,1,0,1,1,10
+"70",5,"Get Goff my Lawn ",3124679,"Jason Sanders","MIA","K","NORMAL","ADD",2024-11-20,1,0,1,1,10
+"71",5,"Get Goff my Lawn ",4433970,"J.J. McCarthy","MIN","QB","NORMAL","ADD",2024-09-02,10,0,1,10,12
+"72",5,"Get Goff my Lawn ",14881,"Russell Wilson","PIT","QB","NORMAL","ADD",2024-10-23,1,0,1,1,10
+"73",5,"Get Goff my Lawn ",3046779,"Jared Goff","DET","QB","NORMAL","TRADE",2024-10-23,14,0,1,14,16
+"74",5,"Get Goff my Lawn ",3054850,"Alvin Kamara","NOS","RB","NORMAL","DRAFT",2024-09-01,17,0,1,17,20
+"75",5,"Get Goff my Lawn ",3043078,"Derrick Henry","BAL","RB","NORMAL","DRAFT",2024-09-01,33,0,1,33,38
+"76",5,"Get Goff my Lawn ",4429013,"Tank Bigsby","JAC","RB","NORMAL","ADD",2024-10-02,1,0,1,1,10
+"77",5,"Get Goff my Lawn ",3916148,"Tony Pollard","TEN","RB","NORMAL","TRADE",2024-10-30,28,0,1,28,32
+"78",5,"Get Goff my Lawn ",4432665,"Brock Bowers","OAK","TE","NORMAL","TRADE",2024-10-23,14,0,1,14,16
+"79",5,"Get Goff my Lawn ",4241478,"DeVonta Smith","PHI","WR","NORMAL","DRAFT",2024-09-01,12,0,1,12,14
+"80",5,"Get Goff my Lawn ",4362249,"Jayden Reed","GBP","WR","NORMAL","DRAFT",2024-09-01,10,0,1,10,12
+"81",5,"Get Goff my Lawn ",4430878,"Jaxon Smith-Njigba","SEA","WR","NORMAL","DRAFT",2024-09-01,6,0,1,6,10
+"82",5,"Get Goff my Lawn ",4688813,"Josh Downs","IND","WR","NORMAL","ADD",2024-10-02,1,0,1,1,10
+"83",5,"Get Goff my Lawn ",4369863,"Cedric Tillman","CLE","WR","NORMAL","ADD",2024-10-23,1,0,1,1,10
+"84",6,"Da Rejects",-16033,"Ravens D/ST","BAL","DST","NORMAL","DRAFT",2024-09-01,3,0,1,3,10
+"85",6,"Da Rejects",3049899,"Younghoe Koo","ATL","K","NORMAL","DRAFT",2024-09-01,1,0,1,1,10
+"86",6,"Da Rejects",4571557,"Spencer Shrader","KCC","K","NORMAL","ADD",2024-11-21,2,0,1,2,10
+"87",6,"Da Rejects",2577417,"Dak Prescott","DAL","QB","NORMAL","DRAFT",2024-09-01,14,0,1,14,16
+"88",6,"Da Rejects",4431611,"Caleb Williams","CHI","QB","NORMAL","DRAFT",2024-09-01,10,0,1,10,12
+"89",6,"Da Rejects",4361418,"Will Levis","TEN","QB","NORMAL","ADD",2024-11-13,1,0,1,1,10
+"90",6,"Da Rejects",4361579,"Javonte Williams","DEN","RB","NORMAL","DRAFT",2024-09-01,16,0,1,16,18
+"91",6,"Da Rejects",4362238,"Chase Brown","CIN","RB","NORMAL","DRAFT",2024-09-01,11,0,1,11,13
+"92",6,"Da Rejects",4596448,"Bucky Irving","TBB","RB","NORMAL","DRAFT",2024-09-01,1,0,1,1,10
+"93",6,"Da Rejects",4360516,"Tyrone Tracy Jr.","NYG","RB","NORMAL","ADD",2024-10-09,2,0,1,2,10
+"94",6,"Da Rejects",4035538,"David Montgomery","DET","RB","NORMAL","TRADE",2024-10-23,6,0,1,6,10
+"95",6,"Da Rejects",3123076,"David Njoku","CLE","TE","NORMAL","TRADE",2024-10-23,6,0,1,6,10
+"96",6,"Da Rejects",4426502,"Drake London","ATL","WR","NORMAL","DRAFT",2024-09-01,17,0,1,17,20
+"97",6,"Da Rejects",4047650,"DK Metcalf","SEA","WR","NORMAL","DRAFT",2024-09-01,14,0,1,14,16
+"98",6,"Da Rejects",4362628,"Ja'Marr Chase","CIN","WR","NORMAL","DRAFT",2024-09-01,53,0,1,53,61
+"99",6,"Da Rejects",4428331,"Rashee Rice","KCC","WR","NORMAL","DRAFT",2024-09-01,23,0,1,23,26
+"100",6,"Da Rejects",3051738,"Marquez Valdes-Scantling","NOS","WR","NORMAL","ADD",2024-11-16,2,0,1,2,10
+"101",6,"Da Rejects",4426388,"Jameson Williams","DET","WR","NORMAL","ADD",2024-11-20,4,0,1,4,10
+"102",7,"The Abiders ",-16021,"Eagles D/ST","PHI","DST","NORMAL","ADD",2024-10-09,1,0,1,1,10
+"103",7,"The Abiders ",17372,"Chris Boswell","PIT","K","NORMAL","ADD",2024-09-18,1,0,1,1,10
+"104",7,"The Abiders ",3139477,"Patrick Mahomes","KCC","QB","NORMAL","DRAFT",2024-09-01,24,0,1,24,28
+"105",7,"The Abiders ",16757,"Derek Carr","NOS","QB","NORMAL","ADD",2024-10-31,1,0,1,1,10
+"106",7,"The Abiders ",3929630,"Saquon Barkley","PHI","RB","NORMAL","DRAFT",2024-09-01,49,0,1,49,56
+"107",7,"The Abiders ",3042519,"Aaron Jones","MIN","RB","NORMAL","DRAFT",2024-09-01,17,0,1,17,20
+"108",7,"The Abiders ",4569173,"Rhamondre Stevenson","NEP","RB","NORMAL","DRAFT",2024-09-01,9,0,1,9,10
+"109",7,"The Abiders ",4040761,"Devin Singletary","NYG","RB","NORMAL","DRAFT",2024-09-01,7,0,1,7,10
+"110",7,"The Abiders ",3040151,"George Kittle","SFO","TE","NORMAL","DRAFT",2024-09-01,17,0,1,17,20
+"111",7,"The Abiders ",15835,"Zach Ertz","WAS","TE","NORMAL","ADD",2024-09-21,1,0,1,1,10
+"112",7,"The Abiders ",3930086,"Dawson Knox","BUF","TE","NORMAL","ADD",2024-11-17,1,0,1,1,10
+"113",7,"The Abiders ",4360438,"Brandon Aiyuk","SFO","WR","NORMAL","DRAFT",2024-09-01,12,0,1,12,14
+"114",7,"The Abiders ",3128429,"Courtland Sutton","DEN","WR","NORMAL","DRAFT",2024-09-01,8,0,1,8,10
+"115",7,"The Abiders ",3116165,"Chris Godwin","TBB","WR","NORMAL","DRAFT",2024-09-01,9,0,1,9,10
+"116",7,"The Abiders ",3043116,"Demarcus Robinson","LAR","WR","NORMAL","ADD",2024-09-11,2,0,1,2,10
+"117",7,"The Abiders ",4429025,"Quentin Johnston","LAC","WR","NORMAL","ADD",2024-10-24,3,0,1,3,10
+"118",7,"The Abiders ",4428209,"Ricky Pearsall","SFO","WR","NORMAL","ADD",2024-10-24,1,0,1,1,10
+"119",7,"The Abiders ",4040655,"Darnell Mooney","ATL","WR","NORMAL","TRADE",2024-10-30,14,0,1,14,16
+"120",8,"The  Vindicators",-16012,"Chiefs D/ST","KCC","DST","NORMAL","ADD",2024-11-20,1,0,1,1,10
+"121",8,"The  Vindicators",2971573,"Ka'imi Fairbairn","HOU","K","NORMAL","DRAFT",2024-09-01,1,0,1,1,10
+"122",8,"The  Vindicators",4241479,"Tua Tagovailoa","MIA","QB","NORMAL","DRAFT",2024-09-01,10,0,1,10,12
+"123",8,"The  Vindicators",14880,"Kirk Cousins","ATL","QB","NORMAL","ADD",2024-09-13,1,0,1,1,10
+"124",8,"The  Vindicators",4697815,"Rachaad White","TBB","RB","NORMAL","DRAFT",2024-09-01,12,0,1,12,14
+"125",8,"The  Vindicators",4430807,"Bijan Robinson","ATL","RB","NORMAL","DRAFT",2024-09-01,61,0,1,61,70
+"126",8,"The  Vindicators",4239996,"Travis Etienne Jr.","JAC","RB","NORMAL","DRAFT",2024-09-01,28,0,1,28,32
+"127",8,"The  Vindicators",4038815,"Rico Dowdle","DAL","RB","NORMAL","DRAFT",2024-09-01,3,0,1,3,10
+"128",8,"The  Vindicators",3059915,"Kareem Hunt","KCC","RB","NORMAL","ADD",2024-09-18,5,0,1,5,10
+"129",8,"The  Vindicators",4360248,"Kyle Pitts","ATL","TE","NORMAL","DRAFT",2024-09-01,19,0,1,19,22
+"130",8,"The  Vindicators",4429148,"Theo Johnson","NYG","TE","NORMAL","ADD",2024-11-20,1,0,1,1,10
+"131",8,"The  Vindicators",16737,"Mike Evans","TBB","WR","NORMAL","DRAFT",2024-09-01,10,0,1,10,12
+"132",8,"The  Vindicators",4429615,"Zay Flowers","BAL","WR","NORMAL","DRAFT",2024-09-01,17,0,1,17,20
+"133",8,"The  Vindicators",2976499,"Amari Cooper","BUF","WR","NORMAL","DRAFT",2024-09-01,7,0,1,7,10
+"134",8,"The  Vindicators",2577327,"Tyler Lockett","SEA","WR","NORMAL","DRAFT",2024-09-01,2,0,1,2,10
+"135",8,"The  Vindicators",4569587,"Wan'Dale Robinson","NYG","WR","NORMAL","ADD",2024-09-11,1,0,1,1,10
+"136",8,"The  Vindicators",3925357,"Calvin Ridley","TEN","WR","NORMAL","ADD",2024-10-09,11,0,1,11,13
+"137",9,"Any Given Sundae",-16023,"Steelers D/ST","PIT","DST","NORMAL","DRAFT",2024-09-01,3,0,1,3,10
+"138",9,"Any Given Sundae",-16028,"Commanders D/ST","WAS","DST","NORMAL","ADD",2024-10-30,1,0,1,1,10
+"139",9,"Any Given Sundae",15683,"Justin Tucker","BAL","K","NORMAL","DRAFT",2024-09-01,3,0,1,3,10
+"140",9,"Any Given Sundae",15864,"Geno Smith","SEA","QB","NORMAL","ADD",2024-09-04,1,0,1,1,10
+"141",9,"Any Given Sundae",12483,"Matthew Stafford","LAR","QB","NORMAL","ADD",2024-11-08,1,0,1,1,10
+"142",9,"Any Given Sundae",4430737,"Kyren Williams","LAR","RB","NORMAL","DRAFT",2024-09-01,12,0,1,12,14
+"143",9,"Any Given Sundae",4379399,"James Cook","BUF","RB","NORMAL","DRAFT",2024-09-01,12,0,1,12,14
+"144",9,"Any Given Sundae",4569682,"Audric Estime","DEN","RB","NORMAL","ADD",2024-11-13,2,0,1,2,10
+"145",9,"Any Given Sundae",4242355,"Jake Ferguson","DAL","TE","NORMAL","DRAFT",2024-09-01,10,0,1,10,12
+"146",9,"Any Given Sundae",3046439,"Hunter Henry","NEP","TE","NORMAL","ADD",2024-10-16,1,0,1,1,10
+"147",9,"Any Given Sundae",4426354,"George Pickens","PIT","WR","NORMAL","DRAFT",2024-09-01,12,0,1,12,14
+"148",9,"Any Given Sundae",4372016,"Jaylen Waddle","MIA","WR","NORMAL","DRAFT",2024-09-01,24,0,1,24,28
+"149",9,"Any Given Sundae",16800,"Davante Adams","NYJ","WR","NORMAL","DRAFT",2024-09-01,34,0,1,34,39
+"150",9,"Any Given Sundae",4239993,"Tee Higgins","CIN","WR","NORMAL","DRAFT",2024-09-01,10,0,1,10,12
+"151",9,"Any Given Sundae",4427095,"DeMario Douglas","NEP","WR","NORMAL","ADD",2024-11-20,1,0,1,1,10
+"152",9,"Any Given Sundae",3116406,"Tyreek Hill","MIA","WR","NORMAL","TRADE",2024-09-17,40,0,1,40,46
+"153",10,"Lamar Lamar Lamar",-16027,"Buccaneers D/ST","TBB","DST","NORMAL","ADD",2024-11-20,1,0,1,1,10
+"154",10,"Lamar Lamar Lamar",4362081,"Cameron Dicker","LAC","K","NORMAL","ADD",2024-11-21,1,0,1,1,10
+"155",10,"Lamar Lamar Lamar",3916387,"Lamar Jackson","BAL","QB","NORMAL","DRAFT",2024-09-01,24,0,1,24,28
+"156",10,"Lamar Lamar Lamar",4431452,"Drake Maye","NEP","QB","NORMAL","DRAFT",2024-09-01,1,0,1,1,10
+"157",10,"Lamar Lamar Lamar",4241474,"Brian Robinson Jr.","WAS","RB","NORMAL","DRAFT",2024-09-01,12,0,1,12,14
+"158",10,"Lamar Lamar Lamar",4242335,"Jonathan Taylor","IND","RB","NORMAL","DRAFT",2024-09-01,34,0,1,34,39
+"159",10,"Lamar Lamar Lamar",4429023,"MarShawn Lloyd","GBP","RB","NORMAL","DRAFT",2024-09-01,3,0,1,3,10
+"160",10,"Lamar Lamar Lamar",4241985,"J.K. Dobbins","LAC","RB","NORMAL","DRAFT",2024-09-01,7,0,1,7,10
+"161",10,"Lamar Lamar Lamar",4241457,"Najee Harris","PIT","RB","NORMAL","TRADE",2024-10-30,1,0,1,1,10
+"162",10,"Lamar Lamar Lamar",4385690,"Dalton Kincaid","BUF","TE","NORMAL","DRAFT",2024-09-01,14,0,1,14,16
+"163",10,"Lamar Lamar Lamar",4361307,"Trey McBride","ARI","TE","NORMAL","DRAFT",2024-09-01,10,0,1,10,12
+"164",10,"Lamar Lamar Lamar",3127292,"Will Dissly","LAC","TE","NORMAL","ADD",2024-11-17,1,0,1,1,10
+"165",10,"Lamar Lamar Lamar",4361370,"Chris Olave","NOS","WR","NORMAL","DRAFT",2024-09-01,12,0,1,12,14
+"166",10,"Lamar Lamar Lamar",2977187,"Cooper Kupp","LAR","WR","NORMAL","DRAFT",2024-09-01,30,0,1,30,34
+"167",10,"Lamar Lamar Lamar",4431299,"Rome Odunze","CHI","WR","NORMAL","DRAFT",2024-09-01,19,0,1,19,22
+"168",10,"Lamar Lamar Lamar",15795,"DeAndre Hopkins","KCC","WR","NORMAL","ADD",2024-09-25,5,0,1,5,10
+"169",10,"Lamar Lamar Lamar",4430034,"Xavier Legette","CAR","WR","NORMAL","ADD",2024-11-13,2,0,1,2,10
+"170",11,"Brenners Semicolon ",-16016,"Vikings D/ST","MIN","DST","NORMAL","ADD",2024-09-18,1,0,1,1,10
+"171",11,"Brenners Semicolon ",4372066,"Jake Moody","SFO","K","NORMAL","DRAFT",2024-09-01,1,0,1,1,10
+"172",11,"Brenners Semicolon ",4249087,"Matt Gay","IND","K","NORMAL","DRAFT",2024-09-01,1,0,1,1,10
+"173",11,"Brenners Semicolon ",4036378,"Jordan Love","GBP","QB","NORMAL","DRAFT",2024-09-01,26,0,1,26,30
+"174",11,"Brenners Semicolon ",8439,"Aaron Rodgers","NYJ","QB","NORMAL","DRAFT",2024-09-01,3,0,1,3,10
+"175",11,"Brenners Semicolon ",3052587,"Baker Mayfield","TBB","QB","NORMAL","DRAFT",2024-09-01,1,0,1,1,10
+"176",11,"Brenners Semicolon ",3068267,"Austin Ekeler","WAS","RB","NORMAL","DRAFT",2024-09-01,79,0,1,79,91
+"177",11,"Brenners Semicolon ",3045147,"James Conner","ARI","RB","NORMAL","DRAFT",2024-09-01,11,0,1,11,13
+"178",11,"Brenners Semicolon ",4360294,"Antonio Gibson","NEP","RB","NORMAL","DRAFT",2024-09-01,3,0,1,3,10
+"179",11,"Brenners Semicolon ",4361411,"Pat Freiermuth","PIT","TE","NORMAL","DRAFT",2024-09-01,1,0,1,1,10
+"180",11,"Brenners Semicolon ",4036133,"T.J. Hockenson","MIN","TE","NORMAL","DRAFT",2024-09-01,13,6,0.647058823529412,20,23
+"181",11,"Brenners Semicolon ",4035687,"Michael Pittman Jr.","IND","WR","NORMAL","DRAFT",2024-09-01,26,0,1,26,30
+"182",11,"Brenners Semicolon ",3916433,"Jakobi Meyers","OAK","WR","NORMAL","DRAFT",2024-09-01,10,0,1,10,12
+"183",11,"Brenners Semicolon ",4429205,"Jordan Addison","MIN","WR","NORMAL","DRAFT",2024-09-01,9,0,1,9,10
+"184",11,"Brenners Semicolon ",16460,"Adam Thielen","CAR","WR","NORMAL","DRAFT",2024-09-01,1,0,1,1,10
+"185",11,"Brenners Semicolon ",3128390,"Allen Lazard","NYJ","WR","NORMAL","ADD",2024-09-26,1,0,1,1,10
+"186",11,"Brenners Semicolon ",3728262,"Ray-Ray McCloud III","ATL","WR","NORMAL","ADD",2024-10-13,1,0,1,1,10
+"187",12,"Swifties",-16005,"Browns D/ST","CLE","DST","NORMAL","DRAFT",2024-09-01,6,0,1,6,10
+"188",12,"Swifties",4051167,"John Parker Romo","MIN","K","NORMAL","ADD",2024-11-15,1,0,1,1,10
+"189",12,"Swifties",3915511,"Joe Burrow","CIN","QB","NORMAL","DRAFT",2024-09-01,12,0,1,12,14
+"190",12,"Swifties",4361741,"Brock Purdy","SFO","QB","NORMAL","DRAFT",2024-09-01,9,0,1,9,10
+"191",12,"Swifties",4361529,"Isiah Pacheco","KCC","RB","NORMAL","DRAFT",2024-09-01,12,0,1,12,14
+"192",12,"Swifties",4259545,"D'Andre Swift","CHI","RB","NORMAL","DRAFT",2024-09-01,17,0,1,17,20
+"193",12,"Swifties",4240021,"Cam Akers","MIN","RB","NORMAL","ADD",2024-11-08,1,0,1,1,10
+"194",12,"Swifties",4429275,"Trey Benson","ARI","RB","NORMAL","ADD",2024-11-13,1,0,1,1,10
+"195",12,"Swifties",4426385,"Zach Charbonnet","SEA","RB","NORMAL","ADD",2024-11-15,1,0,1,1,10
+"196",12,"Swifties",4685247,"Braelon Allen","NYJ","RB","NORMAL","ADD",2024-11-16,1,0,1,1,10
+"197",12,"Swifties",15847,"Travis Kelce","KCC","TE","NORMAL","DRAFT",2024-09-01,28,0,1,28,32
+"198",12,"Swifties",4243331,"Cade Otton","TBB","TE","NORMAL","ADD",2024-10-09,2,0,1,2,10
+"199",12,"Swifties",3121023,"Dallas Goedert","PHI","TE","NORMAL","ADD",2024-10-31,2,0,1,2,10
+"200",12,"Swifties",4426515,"Puka Nacua","LAR","WR","NORMAL","DRAFT",2024-09-01,20,0,1,20,23
+"201",12,"Swifties",4569618,"Garrett Wilson","NYJ","WR","NORMAL","DRAFT",2024-09-01,12,0,1,12,14
+"202",12,"Swifties",15818,"Keenan Allen","CHI","WR","NORMAL","DRAFT",2024-09-01,5,0,1,5,10
+"203",12,"Swifties",4635008,"Keon Coleman","BUF","WR","NORMAL","DRAFT",2024-09-01,11,0,1,11,13
+"204",12,"Swifties",3886598,"Jauan Jennings","SFO","WR","NORMAL","ADD",2024-09-19,7,0,1,7,10

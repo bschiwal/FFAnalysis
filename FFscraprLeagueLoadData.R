@@ -1,5 +1,5 @@
 
-###This R file serves to analyze the 2022 fantasy league to determine current
+###This R file serves to analyze the Yearly fantasy league to determine current
 # roster keeper values. 
 #Currently testing against last year's office league
 
@@ -12,7 +12,7 @@ require(tidyverse)
 
 #Store Connection values for multiple leagues
 witty<- espn_connect(
-  season=2023,
+  season=2024,
   league_id = 680444613,
   espn_s2 = Sys.getenv("TAN_ESPN_S2"),
   swid = Sys.getenv("TAN_SWID")
@@ -35,11 +35,15 @@ league<-witty
 
 susp_players<-espn_players(witty)%>%
   filter(
-    (str_detect(player_name,"Kamara")& team=="NOS") |
-    ( str_detect(player_name,"Jones II") & team=="DAL")
+    (str_detect(player_name,"Hockenson")& team=="MIN") |
+    ( str_detect(player_name,"Miller") & team=="NOS") |
+      ( str_detect(player_name,"Chubb") & team=="CLE") |
+      ( str_detect(player_name,"Brooks") & team=="CAR")
   )%>%
-  mutate(suspension= case_when(team=="NOS" ~ 3,
-                               team=="DAL" ~ 2)
+  mutate(suspension= case_when(team=="MIN" ~ 6,
+                               team=="NOS" ~ 6,
+                               team=="CLE" ~ 4,
+                               team=="CAR" ~ 6)
   )
 
 
@@ -57,7 +61,7 @@ franchise<-ff_franchises(league)%>%
 
   
 ##Write season draft as CSV file.Only done after draft, commenting out to save historic information
-#write.csv(draft, file="data/2023draft.csv", row.names = TRUE) 
+#write.csv(draft, file="data/2024draft.csv", row.names = TRUE) 
 
 
 ##Get values for rostered players currently drafted
@@ -105,18 +109,21 @@ master_trans<-
  trades_master<- master_trans%>%
    filter(type=="TRADE"|is.na(type)==TRUE)
  
-# ##For certain trades with more than one player on each side of the transaction we need to manually define which players values align
-# 
-# 
-trade_manual_id<- c(
-  4430027,   #Sam Laporta
-  3117256, #Dalton Schultz
-  4035676, #Zach Moss
-  2577417 #Dak Prescott
 
-      )
-trade_manual_index<-c(1,1,2,2)
-trade_manual<-data.frame(trade_manual_index,trade_manual_id)
+# ##For certain trades with more than one player on each side or where all players on both sides are grouped
+ ## of the transaction we need to manually define which players values align
+# 
+# 
+
+ trade_manual_id<- c(
+   4035538, #David Montgomery
+   3123076, #David Njoku
+   4432665, #Brock Bowers 
+   3046779  #Jared Goff
+   
+ )
+ trade_manual_index<-c(1,1,1,1)
+ trade_manual<-data.frame(trade_manual_index,trade_manual_id)
     
  rm(trade_manual_id,trade_manual_index)
 
@@ -152,14 +159,14 @@ trade_manual<-data.frame(trade_manual_index,trade_manual_id)
    ungroup(trade_id)%>%
    select(-c(trade_id,counter))%>%
    left_join(trade_manual,by=c("player_id_given"="trade_manual_id"))%>%
-   left_join(trade_value%>%
+ left_join(trade_value%>%
                select(player_id,franchise_id,player_value),
-             by=c("player_id_given"="player_id","franchise_id"="franchise_id"))%>%
-   mutate(
+             by=c("player_id_given"="player_id","franchise_id"="franchise_id"))  %>%
+ mutate(
      player_value = case_when(player_id_given=="3916430"& trans_date=="2022-11-02" ~ as.integer(4),
                                           TRUE ~ player_value),
-     trade_manual_index = case_when(player_id_given=="3916430"& trans_date=="2022-11-02" ~ 1,
-                                    TRUE ~trade_manual_index))
+    trade_manual_index = case_when(player_id_given=="3916430"& trans_date=="2022-11-02" ~ 1,
+                                  TRUE ~trade_manual_index))
  
 # 
 # ##Create a frame with all the players a team gave up and add grouping index to align player values
@@ -172,69 +179,71 @@ trade_manual<-data.frame(trade_manual_index,trade_manual_id)
    mutate(counter=row_number(trade_id))%>%
    ungroup(trade_id)%>%
    select(-c(trade_id,franchise_name,trade_partner,counter))%>%
-   left_join(trade_manual,by=c("player_id_recieved"="trade_manual_id"))%>%
-   mutate( trade_manual_index = case_when(player_id_recieved=="3916430"& trans_date=="2022-11-02" ~ 1,
-                                          TRUE ~trade_manual_index))
+    left_join(trade_manual,by=c("player_id_recieved"="trade_manual_id"))%>%
+    mutate( trade_manual_index = case_when(player_id_recieved=="3916430"& trans_date=="2022-11-02" ~ 1,
+                                           TRUE ~trade_manual_index))
  
- ##Players without a defined index recieve an index of 1
+ ##Players without a defined index receive an index of 1
  trade_given[is.na(trade_given)] <- 1
  trade_recieved[is.na(trade_recieved)] <- 1
  
  ##Join Given and Received frames
  trade<- left_join(
    trade_recieved,trade_given,
-                   by=c("franchise_id"="franchise_id", "trans_date"="trans_date","trade_manual_index"))
+                   by=c("franchise_id"="franchise_id", "trans_date"="trans_date"
+                        ,"trade_manual_index"
+                        ))
  
  ###This section accounts for trades where each side of the group index has an uneven amount of players
  
  ##First look group the given side of the transaction and split player amount by number of players received when given player is duplicated
- trade_uneven_given<- trade%>%
-  group_by(franchise_id,player_id_given,trade_manual_index,trans_date)%>%
-  summarize(players_given = 1,
-            players_recieved = n(),
-            player_value_given = first(player_value),
-            player_value_split = ceiling(player_value_given/players_recieved))
+  trade_uneven_given<- trade%>%
+   group_by(franchise_id,player_id_given,trade_manual_index,trans_date)%>%
+   summarize(players_given = 1,
+             players_recieved = n(),
+             player_value_given = first(player_value),
+             player_value_split = ceiling(player_value_given/players_recieved))
 
 ##then group the received side and sum all given values when recieved player is duplicated
-trade_uneven_recieved<-trade%>%
-  group_by(franchise_id,player_id_recieved,trade_manual_index,trans_date)%>%
-  summarize(players_recieved = 1,
-            players_given=n(),
-            player_value_total = sum(player_value))
+  trade_uneven_recieved<-trade%>%
+   group_by(franchise_id,player_id_recieved,trade_manual_index,trans_date)%>%
+   summarize(players_recieved = 1,
+             players_given=n(),
+             player_value_total = sum(player_value))
 
 ##join datasets and group again by player recieved, then take total for all rows unless recieved more players than gave, then take split value.
-trade_final<-left_join(trade_uneven_recieved%>%
-                         select(-players_recieved),
+  trade_final<-left_join(trade_uneven_recieved%>%
+                          select(-players_recieved),
                        trade_uneven_given%>%
-                         select(-players_given),
-                       by=c("franchise_id","trade_manual_index","trans_date"))%>%
-  group_by(franchise_id,player_id_recieved)%>%
-  summarize(given = first(players_given),
-            recieved = first(players_recieved),
-            value_total = first(player_value_total),
-            value_split = first(player_value_split),
-            player_value = if_else(given>1,value_total,as.integer(value_split))
+                          select(-players_given),
+                        by=c("franchise_id","trade_manual_index","trans_date"))%>%
+   group_by(franchise_id,player_id_recieved)%>%
+   summarize(given = first(players_given),
+             recieved = first(players_recieved),
+             value_total = sum(player_value_total),
+             value_split = sum(player_value_split),
+             player_value = if_else(given==1,value_total,as.integer(value_split))
   )%>%
   select(-given,-recieved,-value_total,-value_split)%>%
-  rename("player_id"="player_id_recieved")
+   rename("player_id"="player_id_recieved")
 
-rm(trade_uneven_given,trade_uneven_recieved)
+  rm(trade_uneven_given,trade_uneven_recieved)
 
 
 ##rebuild trade dataset with values
 
 
-rm(trade_value,trade_given,trade_recieved,trade_manual)
+  rm(trade_value,trade_given,trade_recieved,trade_manual)
 
 
 roster_trade<- roster%>%
   filter(acquisition_type=="TRADE")%>%
   left_join(trade_final,
             by=c("player_id","franchise_id"))
-rm(trade,tradefinal)
+rm(trade,trade_final)
 ###Join Values to Roster
 roster_final<-union_all(roster_drafted,roster_waiver)%>%
-  union_all(roster_trade)%>%
+    union_all(roster_trade)%>%
   arrange(franchise_id,pos)
 
 ###test if initial roster and final build of roster are same size 
@@ -254,7 +263,7 @@ roster<-roster%>%
               select(player_id,suspension)),
             by="player_id")%>%
   mutate(suspension = coalesce(suspension,0), #Replace NA suspension with 0
-         susp_factor = 1-(suspension/14), #Calculate percent of games played for year
+         susp_factor = 1-(suspension/17), #Calculate percent of games played for year
          keeper_base = round(player_value/susp_factor,0), # Gross up player salary to full season value
          keeper_value = if_else(round(keeper_base*1.15,0)<10,  #Calculate keeper value
                                 10, 
@@ -263,7 +272,7 @@ roster<-roster%>%
   select(-c(eligible_pos,acquisition_date))
 
 ## Write data to CSV file 
-write.csv(roster, file="data/keepervalues2023.csv", row.names=TRUE)
+write.csv(roster, file="data/keepervalues2024.csv", row.names=TRUE)
 
 
 ##Final Keeper Values
@@ -273,4 +282,5 @@ finalkeeper<-roster%>%
   left_join((franchise%>% #Add suspension to player roster
                select(franchise_id,user_first)),
             by="franchise_id")
-write.csv(finalkeeper, file="data/finalkeepervalues2023.csv", row.names=TRUE)
+write.csv(finalkeeper, file="data/finalkeepervalues2024.csv", row.names=TRUE)
+
