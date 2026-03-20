@@ -1,7 +1,7 @@
 ### Load Season Data and save as CSV.
 library(dplyr)
 library(nflfastR)
-seasons<- c(2018:2023)
+seasons<- c(2018:2024)
 
 ###Download Historical Season and Player Data
 pbp<- nflfastR::load_pbp(seasons)

@@ -1,0 +1,211 @@
+"","franchise_id","franchise_name","player_id","player_name","team","pos","status","acquisition_type","trans_date","player_value","suspension","susp_factor","keeper_base","keeper_value"
+"1",1,"Ooh Baby I Like It Ra",-16026,"Seahawks D/ST","SEA","DST","NORMAL","DRAFT",2025-09-01,1,0,1,1,10
+"2",1,"Ooh Baby I Like It Ra",4567104,"Will Reichard","MIN","K","NORMAL","DRAFT",2025-09-01,1,0,1,1,10
+"3",1,"Ooh Baby I Like It Ra",3918298,"Josh Allen","BUF","QB","NORMAL","DRAFT",2025-09-01,14,0,1,14,16
+"4",1,"Ooh Baby I Like It Ra",4426348,"Jayden Daniels","WAS","QB","NORMAL","DRAFT",2025-09-01,15,0,1,15,17
+"5",1,"Ooh Baby I Like It Ra",2576980,"Marcus Mariota","WAS","QB","NORMAL","ADD",2025-11-05,1,0,1,1,10
+"6",1,"Ooh Baby I Like It Ra",4427366,"Breece Hall","NYJ","RB","NORMAL","DRAFT",2025-09-01,12,0,1,12,14
+"7",1,"Ooh Baby I Like It Ra",4890973,"Ashton Jeanty","OAK","RB","NORMAL","DRAFT",2025-09-01,47,0,1,47,54
+"8",1,"Ooh Baby I Like It Ra",4697815,"Rachaad White","WAS","RB","NORMAL","DRAFT",2025-09-01,2,0,1,2,10
+"9",1,"Ooh Baby I Like It Ra",4695404,"Isaiah Davis","NYJ","RB","NORMAL","ADD",2025-11-05,1,0,1,1,10
+"10",1,"Ooh Baby I Like It Ra",4572680,"Tucker Kraft","GBP","TE","NORMAL","DRAFT",2025-09-01,12,0,1,12,14
+"11",1,"Ooh Baby I Like It Ra",3046439,"Hunter Henry","NEP","TE","NORMAL","DRAFT",2025-09-01,1,0,1,1,10
+"12",1,"Ooh Baby I Like It Ra",4360248,"Kyle Pitts Sr.","ATL","TE","NORMAL","TRADE",2025-11-04,13,0,1,13,15
+"13",1,"Ooh Baby I Like It Ra",2976212,"Stefon Diggs","FA","WR","NORMAL","DRAFT",2025-09-01,10,0,1,10,12
+"14",1,"Ooh Baby I Like It Ra",4374302,"Amon-Ra St. Brown","DET","WR","NORMAL","DRAFT",2025-09-01,32,0,1,32,37
+"15",1,"Ooh Baby I Like It Ra",4432708,"Marvin Harrison Jr.","ARI","WR","NORMAL","DRAFT",2025-09-01,28,0,1,28,32
+"16",1,"Ooh Baby I Like It Ra",4035687,"Michael Pittman Jr.","PIT","WR","NORMAL","DRAFT",2025-09-01,8,0,1,8,10
+"17",1,"Ooh Baby I Like It Ra",4569587,"Wan'Dale Robinson","TEN","WR","NORMAL","DRAFT",2025-09-01,1,0,1,1,10
+"18",1,"Ooh Baby I Like It Ra",4248528,"Christian Watson","GBP","WR","NORMAL","ADD",2025-10-15,1,0,1,1,10
+"19",2,"Lambeau Leaps of Faith",-16030,"Jaguars D/ST","JAC","DST","NORMAL","ADD",2025-10-29,1,0,1,1,10
+"20",2,"Lambeau Leaps of Faith",4697745,"Tyler Loop","BAL","K","NORMAL","ADD",2025-10-22,1,0,1,1,10
+"21",2,"Lambeau Leaps of Faith",4426338,"Bo Nix","DEN","QB","NORMAL","DRAFT",2025-09-01,10,0,1,10,12
+"22",2,"Lambeau Leaps of Faith",4360310,"Trevor Lawrence","JAC","QB","NORMAL","DRAFT",2025-09-01,1,0,1,1,10
+"23",2,"Lambeau Leaps of Faith",4241416,"Chuba Hubbard","CAR","RB","NORMAL","DRAFT",2025-09-01,10,0,1,10,12
+"24",2,"Lambeau Leaps of Faith",4567048,"Kenneth Walker III","KCC","RB","NORMAL","DRAFT",2025-09-01,14,0,1,14,16
+"25",2,"Lambeau Leaps of Faith",4685382,"Omarion Hampton","LAC","RB","NORMAL","DRAFT",2025-09-01,44,0,1,44,51
+"26",2,"Lambeau Leaps of Faith",4430968,"Kimani Vidal","LAC","RB","NORMAL","ADD",2025-10-08,4,0,1,4,10
+"27",2,"Lambeau Leaps of Faith",4608686,"Kyle Monangai","CHI","RB","NORMAL","ADD",2025-10-22,1,0,1,1,10
+"28",2,"Lambeau Leaps of Faith",4595342,"Oronde Gadsden","LAC","TE","NORMAL","ADD",2025-10-22,5,0,1,5,10
+"29",2,"Lambeau Leaps of Faith",3117256,"Dalton Schultz","HOU","TE","NORMAL","ADD",2025-11-12,1,0,1,1,10
+"30",2,"Lambeau Leaps of Faith",3121422,"Terry McLaurin","WAS","WR","NORMAL","DRAFT",2025-09-01,16,0,1,16,18
+"31",2,"Lambeau Leaps of Faith",4595348,"Malik Nabers","NYG","WR","NORMAL","DRAFT",2025-09-01,36,0,1,36,41
+"32",2,"Lambeau Leaps of Faith",4047646,"A.J. Brown","PHI","WR","NORMAL","DRAFT",2025-09-01,33,0,1,33,38
+"33",2,"Lambeau Leaps of Faith",3886598,"Jauan Jennings","SFO","WR","NORMAL","DRAFT",2025-09-01,8,0,1,8,10
+"34",2,"Lambeau Leaps of Faith",4428718,"Tre Tucker","OAK","WR","NORMAL","ADD",2025-09-24,15,0,1,15,17
+"35",2,"Lambeau Leaps of Faith",4431268,"Chimere Dike","TEN","WR","NORMAL","ADD",2025-10-25,1,0,1,1,10
+"36",3,"LaPorta Potties",-16009,"Packers D/ST","GBP","DST","NORMAL","DRAFT",2025-09-01,3,0,1,3,10
+"37",3,"LaPorta Potties",-16012,"Chiefs D/ST","KCC","DST","NORMAL","ADD",2025-10-17,1,0,1,1,10
+"38",3,"LaPorta Potties",2971573,"Ka'imi Fairbairn","HOU","K","NORMAL","ADD",2025-10-15,1,0,1,1,10
+"39",3,"LaPorta Potties",4040715,"Jalen Hurts","PHI","QB","NORMAL","DRAFT",2025-09-01,14,0,1,14,16
+"40",3,"LaPorta Potties",12483,"Matthew Stafford","LAR","QB","NORMAL","DRAFT",2025-09-01,1,0,1,1,10
+"41",3,"LaPorta Potties",4429795,"Jahmyr Gibbs","DET","RB","NORMAL","DRAFT",2025-09-01,45,0,1,45,52
+"42",3,"LaPorta Potties",3916148,"Tony Pollard","TEN","RB","NORMAL","DRAFT",2025-09-01,15,0,1,15,17
+"43",3,"LaPorta Potties",4568490,"RJ Harvey","DEN","RB","NORMAL","DRAFT",2025-09-01,21,0,1,21,24
+"44",3,"LaPorta Potties",3116385,"Joe Mixon","FA","RB","NORMAL","DRAFT",2025-09-01,2,0,1,2,10
+"45",3,"LaPorta Potties",4373626,"Tyler Allgeier","ARI","RB","NORMAL","DRAFT",2025-09-01,1,0,1,1,10
+"46",3,"LaPorta Potties",4682652,"Devin Neal","NOS","RB","NORMAL","ADD",2025-11-26,1,0,1,1,10
+"47",3,"LaPorta Potties",4429096,"Blake Corum","LAR","RB","NORMAL","ADD",2025-12-10,9,0,1,9,10
+"48",3,"LaPorta Potties",4430027,"Sam LaPorta","DET","TE","NORMAL","DRAFT",2025-09-01,12,0,1,12,14
+"49",3,"LaPorta Potties",4576297,"AJ Barner","SEA","TE","NORMAL","ADD",2025-12-11,1,0,1,1,10
+"50",3,"LaPorta Potties",4262921,"Justin Jefferson","MIN","WR","NORMAL","DRAFT",2025-09-01,18,0,1,18,21
+"51",3,"LaPorta Potties",4241389,"CeeDee Lamb","DAL","WR","NORMAL","DRAFT",2025-09-01,32,0,1,32,37
+"52",3,"LaPorta Potties",4258173,"Nico Collins","HOU","WR","NORMAL","DRAFT",2025-09-01,12,0,1,12,14
+"53",3,"LaPorta Potties",4361432,"Romeo Doubs","NEP","WR","NORMAL","ADD",2025-09-24,5,0,1,5,10
+"54",4,"Ladd to be here",-16006,"Cowboys D/ST","DAL","DST","NORMAL","ADD",2025-12-11,1,0,1,1,10
+"55",4,"Ladd to be here",4569923,"Andy Borregales","NEP","K","NORMAL","ADD",2025-11-13,1,0,1,1,10
+"56",4,"Ladd to be here",3055899,"Harrison Butker","KCC","K","NORMAL","ADD",2025-12-03,2,0,1,2,10
+"57",4,"Ladd to be here",3917315,"Kyler Murray","MIN","QB","NORMAL","DRAFT",2025-09-01,13,0,1,13,15
+"58",4,"Ladd to be here",4036378,"Jordan Love","GBP","QB","NORMAL","DRAFT",2025-09-01,7,0,1,7,10
+"59",4,"Ladd to be here",4241479,"Tua Tagovailoa","ATL","QB","NORMAL","ADD",2025-11-27,1,0,1,1,10
+"60",4,"Ladd to be here",4360689,"Tyler Shough","NOS","QB","NORMAL","ADD",2025-12-12,1,0,1,1,10
+"61",4,"Ladd to be here",4429160,"De'Von Achane","MIA","RB","NORMAL","DRAFT",2025-09-01,12,0,1,12,14
+"62",4,"Ladd to be here",4432710,"TreVeyon Henderson","NEP","RB","NORMAL","DRAFT",2025-09-01,25,0,1,25,29
+"63",4,"Ladd to be here",4696981,"Cam Skattebo","NYG","RB","NORMAL","DRAFT",2025-09-01,10,0,1,10,12
+"64",4,"Ladd to be here",4426385,"Zach Charbonnet","SEA","RB","NORMAL","DRAFT",2025-09-01,7,0,1,7,10
+"65",4,"Ladd to be here",3116365,"Mark Andrews","BAL","TE","NORMAL","DRAFT",2025-09-01,11,0,1,11,13
+"66",4,"Ladd to be here",4432773,"Brian Thomas Jr.","JAC","WR","NORMAL","DRAFT",2025-09-01,15,0,1,15,17
+"67",4,"Ladd to be here",4612826,"Ladd McConkey","LAC","WR","NORMAL","DRAFT",2025-09-01,15,0,1,15,17
+"68",4,"Ladd to be here",4567750,"Emeka Egbuka","TBB","WR","NORMAL","DRAFT",2025-09-01,17,0,1,17,20
+"69",4,"Ladd to be here",4429615,"Zay Flowers","BAL","WR","NORMAL","DRAFT",2025-09-01,17,0,1,17,20
+"70",4,"Ladd to be here",4362249,"Jayden Reed","GBP","WR","NORMAL","DRAFT",2025-09-01,5,0,1,5,10
+"71",4,"Ladd to be here",4429022,"Kayshon Boutte","NEP","WR","NORMAL","ADD",2025-11-22,3,0,1,3,10
+"72",5,"One Derricktion",-16007,"Broncos D/ST","DEN","DST","NORMAL","DRAFT",2025-09-01,7,0,1,7,10
+"73",5,"One Derricktion",4686361,"Cam Little","JAC","K","NORMAL","ADD",2025-11-20,1,0,1,1,10
+"74",5,"One Derricktion",4433970,"J.J. McCarthy","MIN","QB","NORMAL","DRAFT",2025-09-01,12,0,1,12,14
+"75",5,"One Derricktion",8439,"Aaron Rodgers","PIT","QB","NORMAL","ADD",2025-11-29,1,0,1,1,10
+"76",5,"One Derricktion",3043078,"Derrick Henry","BAL","RB","NORMAL","DRAFT",2025-09-01,38,0,1,38,44
+"77",5,"One Derricktion",3054850,"Alvin Kamara","NOS","RB","NORMAL","DRAFT",2025-09-01,20,0,1,20,23
+"78",5,"One Derricktion",4259545,"D'Andre Swift","CHI","RB","NORMAL","DRAFT",2025-09-01,19,0,1,19,22
+"79",5,"One Derricktion",4430871,"Sean Tucker","TBB","RB","NORMAL","ADD",2025-11-19,9,0,1,9,10
+"80",5,"One Derricktion",4360569,"Jordan Mason","MIN","RB","NORMAL","TRADE",2025-11-04,3,0,1,3,10
+"81",5,"One Derricktion",4432665,"Brock Bowers","OAK","TE","NORMAL","DRAFT",2025-09-01,16,0,1,16,18
+"82",5,"One Derricktion",4723086,"Colston Loveland","CHI","TE","NORMAL","ADD",2025-12-18,1,0,1,1,10
+"83",5,"One Derricktion",4241478,"DeVonta Smith","PHI","WR","NORMAL","DRAFT",2025-09-01,14,0,1,14,16
+"84",5,"One Derricktion",4430878,"Jaxon Smith-Njigba","SEA","WR","NORMAL","DRAFT",2025-09-01,10,0,1,10,12
+"85",5,"One Derricktion",3126486,"Deebo Samuel","WAS","WR","NORMAL","DRAFT",2025-09-01,9,0,1,9,10
+"86",5,"One Derricktion",4428209,"Ricky Pearsall","SFO","WR","NORMAL","DRAFT",2025-09-01,12,0,1,12,14
+"87",5,"One Derricktion",4685278,"Luther Burden III","CHI","WR","NORMAL","ADD",2025-12-10,1,0,1,1,10
+"88",5,"One Derricktion",4877706,"Jayden Higgins","HOU","WR","NORMAL","ADD",2025-12-26,1,0,1,1,10
+"89",6,"Da Rejects",-16005,"Browns D/ST","CLE","DST","NORMAL","ADD",2025-11-05,3,0,1,3,10
+"90",6,"Da Rejects",3953687,"Brandon Aubrey","DAL","K","NORMAL","DRAFT",2025-09-01,2,0,1,2,10
+"91",6,"Da Rejects",17372,"Chris Boswell","PIT","K","NORMAL","DRAFT",2025-09-01,1,0,1,1,10
+"92",6,"Da Rejects",4038941,"Justin Herbert","LAC","QB","NORMAL","DRAFT",2025-09-01,16,0,1,16,18
+"93",6,"Da Rejects",2577417,"Dak Prescott","DAL","QB","NORMAL","DRAFT",2025-09-01,6,0,1,6,10
+"94",6,"Da Rejects",4596448,"Bucky Irving","TBB","RB","NORMAL","DRAFT",2025-09-01,10,0,1,10,12
+"95",6,"Da Rejects",4362238,"Chase Brown","CIN","RB","NORMAL","DRAFT",2025-09-01,13,0,1,13,15
+"96",6,"Da Rejects",4035538,"David Montgomery","HOU","RB","NORMAL","DRAFT",2025-09-01,10,0,1,10,12
+"97",6,"Da Rejects",4040761,"Devin Singletary","NYG","RB","NORMAL","ADD",2025-11-05,5,0,1,5,10
+"98",6,"Da Rejects",4431459,"Tyler Warren","IND","TE","NORMAL","DRAFT",2025-09-01,10,0,1,10,12
+"99",6,"Da Rejects",15835,"Zach Ertz","WAS","TE","NORMAL","DRAFT",2025-09-01,5,0,1,5,10
+"100",6,"Da Rejects",4426502,"Drake London","ATL","WR","NORMAL","DRAFT",2025-09-01,20,0,1,20,23
+"101",6,"Da Rejects",4683062,"Xavier Worthy","KCC","WR","NORMAL","DRAFT",2025-09-01,25,0,1,25,29
+"102",6,"Da Rejects",4701936,"Matthew Golden","GBP","WR","NORMAL","DRAFT",2025-09-01,21,0,1,21,24
+"103",6,"Da Rejects",4685472,"Tetairoa McMillan","CAR","WR","NORMAL","DRAFT",2025-09-01,19,0,1,19,22
+"104",6,"Da Rejects",4426388,"Jameson Williams","DET","WR","NORMAL","TRADE",2025-10-29,1,0,1,1,10
+"105",7,"The Abiders ",-16014,"Rams D/ST","LAR","DST","NORMAL","ADD",2025-10-29,2,0,1,2,10
+"106",7,"The Abiders ",4362081,"Cameron Dicker","LAC","K","NORMAL","ADD",2025-09-19,1,0,1,1,10
+"107",7,"The Abiders ",3046779,"Jared Goff","DET","QB","NORMAL","DRAFT",2025-09-01,3,0,1,3,10
+"108",7,"The Abiders ",4689114,"Jaxson Dart","NYG","QB","NORMAL","ADD",2025-10-22,2,0,1,2,10
+"109",7,"The Abiders ",3929630,"Saquon Barkley","PHI","RB","NORMAL","DRAFT",2025-09-01,56,0,1,56,64
+"110",7,"The Abiders ",3042519,"Aaron Jones Sr.","MIN","RB","NORMAL","DRAFT",2025-09-01,17,0,1,17,20
+"111",7,"The Abiders ",4360516,"Tyrone Tracy Jr.","NYG","RB","NORMAL","DRAFT",2025-09-01,12,0,1,12,14
+"112",7,"The Abiders ",4429275,"Trey Benson","ARI","RB","NORMAL","DRAFT",2025-09-01,3,0,1,3,10
+"113",7,"The Abiders ",4371733,"Kenneth Gainwell","TBB","RB","NORMAL","ADD",2025-09-19,1,0,1,1,10
+"114",7,"The Abiders ",4038815,"Rico Dowdle","PIT","RB","NORMAL","ADD",2025-10-04,2,0,1,2,10
+"115",7,"The Abiders ",4362619,"Chris Rodriguez Jr.","JAC","RB","NORMAL","ADD",2025-12-10,4,0,1,4,10
+"116",7,"The Abiders ",3040151,"George Kittle","SFO","TE","NORMAL","DRAFT",2025-09-01,20,0,1,20,23
+"117",7,"The Abiders ",3128429,"Courtland Sutton","DEN","WR","NORMAL","DRAFT",2025-09-01,10,0,1,10,12
+"118",7,"The Abiders ",3116406,"Tyreek Hill","FA","WR","NORMAL","DRAFT",2025-09-01,28,0,1,28,32
+"119",7,"The Abiders ",4047650,"DK Metcalf","PIT","WR","NORMAL","DRAFT",2025-09-01,19,0,1,19,22
+"120",7,"The Abiders ",4373678,"Khalil Shakir","BUF","WR","NORMAL","DRAFT",2025-09-01,6,0,1,6,10
+"121",7,"The Abiders ",4032473,"Rashid Shaheed","SEA","WR","NORMAL","DRAFT",2025-09-01,3,0,1,3,10
+"122",7,"The Abiders ",3116165,"Chris Godwin Jr.","TBB","WR","NORMAL","DRAFT",2025-09-01,6,0,1,6,10
+"123",8,"The  Vindicators",-16017,"Patriots D/ST","NEP","DST","NORMAL","DRAFT",2025-09-01,1,0,1,1,10
+"124",8,"The  Vindicators",-16008,"Lions D/ST","DET","DST","NORMAL","ADD",2025-12-24,5,0,1,5,10
+"125",8,"The  Vindicators",2473037,"Jason Myers","SEA","K","NORMAL","ADD",2025-10-29,1,0,1,1,10
+"126",8,"The  Vindicators",4431611,"Caleb Williams","CHI","QB","NORMAL","DRAFT",2025-09-01,5,0,1,5,10
+"127",8,"The  Vindicators",4430807,"Bijan Robinson","ATL","RB","NORMAL","DRAFT",2025-09-01,70,0,1,70,80
+"128",8,"The  Vindicators",4239996,"Travis Etienne Jr.","NOS","RB","NORMAL","DRAFT",2025-09-01,14,0,1,14,16
+"129",8,"The  Vindicators",4428557,"Tyjae Spears","TEN","RB","NORMAL","DRAFT",2025-09-01,1,0,1,1,10
+"130",8,"The  Vindicators",4429059,"Woody Marks","HOU","RB","NORMAL","ADD",2025-09-03,1,0,1,1,10
+"131",8,"The  Vindicators",3059915,"Kareem Hunt","KCC","RB","NORMAL","ADD",2025-09-12,1,0,1,1,10
+"132",8,"The  Vindicators",4241474,"Brian Robinson Jr.","SFO","RB","NORMAL","ADD",2025-12-22,1,0,1,1,10
+"133",8,"The  Vindicators",15847,"Travis Kelce","KCC","TE","NORMAL","DRAFT",2025-09-01,17,0,1,17,20
+"134",8,"The  Vindicators",2576925,"Darren Waller","MIA","TE","NORMAL","ADD",2025-12-24,1,0,1,1,10
+"135",8,"The  Vindicators",4430539,"Brenton Strange","JAC","TE","NORMAL","ADD",2025-12-26,5,0,1,5,10
+"136",8,"The  Vindicators",16737,"Mike Evans","SFO","WR","NORMAL","DRAFT",2025-09-01,12,0,1,12,14
+"137",8,"The  Vindicators",4362628,"Ja'Marr Chase","CIN","WR","NORMAL","DRAFT",2025-09-01,53,0,1,53,61
+"138",8,"The  Vindicators",4428331,"Rashee Rice","KCC","WR","NORMAL","DRAFT",2025-09-01,8,6,0.647058823529412,12,14
+"139",8,"The  Vindicators",4360438,"Brandon Aiyuk","SFO","WR","NORMAL","DRAFT",2025-09-01,1,6,0.647058823529412,2,10
+"140",8,"The  Vindicators",4432620,"Parker Washington","JAC","WR","NORMAL","ADD",2025-11-05,1,0,1,1,10
+"141",9,"Ass",-16023,"Steelers D/ST","PIT","DST","NORMAL","DRAFT",2025-09-01,6,0,1,6,10
+"142",9,"Ass",-16002,"Bills D/ST","BUF","DST","NORMAL","DRAFT",2025-09-01,5,0,1,5,10
+"143",9,"Ass",4689936,"Jake Bates","DET","K","NORMAL","DRAFT",2025-09-01,3,0,1,3,10
+"144",9,"Ass",4360234,"Evan McPherson","CIN","K","NORMAL","ADD",2025-10-22,1,0,1,1,10
+"145",9,"Ass",3139477,"Patrick Mahomes","KCC","QB","NORMAL","DRAFT",2025-09-01,21,0,1,21,24
+"146",9,"Ass",2578570,"Jacoby Brissett","ARI","QB","NORMAL","ADD",2025-11-07,1,0,1,1,10
+"147",9,"Ass",4685720,"Bryce Young","CAR","QB","NORMAL","ADD",2025-12-24,1,0,1,1,10
+"148",9,"Ass",4430737,"Kyren Williams","LAR","RB","NORMAL","DRAFT",2025-09-01,14,0,1,14,16
+"149",9,"Ass",4379399,"James Cook III","BUF","RB","NORMAL","DRAFT",2025-09-01,14,0,1,14,16
+"150",9,"Ass",4036133,"T.J. Hockenson","MIN","TE","NORMAL","DRAFT",2025-09-01,24,0,1,24,28
+"151",9,"Ass",3121023,"Dallas Goedert","PHI","TE","NORMAL","DRAFT",2025-09-01,5,0,1,5,10
+"152",9,"Ass",16800,"Davante Adams","LAR","WR","NORMAL","DRAFT",2025-09-01,39,0,1,39,45
+"153",9,"Ass",4426354,"George Pickens","DAL","WR","NORMAL","DRAFT",2025-09-01,14,0,1,14,16
+"154",9,"Ass",4239993,"Tee Higgins","CIN","WR","NORMAL","DRAFT",2025-09-01,12,0,1,12,14
+"155",9,"Ass",4685415,"Travis Hunter","JAC","WR","NORMAL","DRAFT",2025-09-01,11,0,1,11,13
+"156",9,"Ass",4242540,"Isaiah Hodgins","NYG","WR","NORMAL","ADD",2025-11-26,1,0,1,1,10
+"157",9,"Ass",4597500,"Adonai Mitchell","NYJ","WR","NORMAL","ADD",2025-12-19,1,0,1,1,10
+"158",10,"Lamar Lamar Lamar",-16018,"Saints D/ST","NOS","DST","NORMAL","ADD",2025-12-17,1,0,1,1,10
+"159",10,"Lamar Lamar Lamar",4034949,"Eddy Pineiro","SFO","K","NORMAL","ADD",2025-12-10,1,0,1,1,10
+"160",10,"Lamar Lamar Lamar",3916387,"Lamar Jackson","BAL","QB","NORMAL","DRAFT",2025-09-01,28,0,1,28,32
+"161",10,"Lamar Lamar Lamar",4431452,"Drake Maye","NEP","QB","NORMAL","DRAFT",2025-09-01,10,0,1,10,12
+"162",10,"Lamar Lamar Lamar",4242335,"Jonathan Taylor","IND","RB","NORMAL","DRAFT",2025-09-01,41,0,1,41,47
+"163",10,"Lamar Lamar Lamar",4241985,"J.K. Dobbins","DEN","RB","NORMAL","DRAFT",2025-09-01,6,0,1,6,10
+"164",10,"Lamar Lamar Lamar",4569173,"Rhamondre Stevenson","NEP","RB","NORMAL","DRAFT",2025-09-01,6,0,1,6,10
+"165",10,"Lamar Lamar Lamar",4685702,"Quinshon Judkins","CLE","RB","NORMAL","DRAFT",2025-09-01,3,0,1,3,10
+"166",10,"Lamar Lamar Lamar",4882093,"Bhayshul Tuten","JAC","RB","NORMAL","ADD",2025-11-19,6,0,1,6,10
+"167",10,"Lamar Lamar Lamar",4678008,"Jonathon Brooks","CAR","RB","NORMAL","ADD",2025-12-14,1,0,1,1,10
+"168",10,"Lamar Lamar Lamar",4575131,"Jacory Croskey-Merritt","WAS","RB","NORMAL","ADD",2025-12-17,7,0,1,7,10
+"169",10,"Lamar Lamar Lamar",5081397,"Dylan Sampson","CLE","RB","NORMAL","ADD",2025-12-24,1,0,1,1,10
+"170",10,"Lamar Lamar Lamar",4361307,"Trey McBride","ARI","TE","NORMAL","DRAFT",2025-09-01,12,0,1,12,14
+"171",10,"Lamar Lamar Lamar",5083076,"Harold Fannin Jr.","CLE","TE","NORMAL","ADD",2025-12-10,10,0,1,10,12
+"172",10,"Lamar Lamar Lamar",4361370,"Chris Olave","NOS","WR","NORMAL","DRAFT",2025-09-01,14,0,1,14,16
+"173",10,"Lamar Lamar Lamar",3915416,"DJ Moore","BUF","WR","NORMAL","DRAFT",2025-09-01,15,0,1,15,17
+"174",10,"Lamar Lamar Lamar",15818,"Keenan Allen","LAC","WR","NORMAL","DRAFT",2025-09-01,3,0,1,3,10
+"175",10,"Lamar Lamar Lamar",5083754,"Ryan Flournoy","DAL","WR","NORMAL","ADD",2025-12-24,1,0,1,1,10
+"176",11,"Brenners Semicolon ",-16016,"Vikings D/ST","MIN","DST","NORMAL","DRAFT",2025-09-01,10,0,1,10,12
+"177",11,"Brenners Semicolon ",-16024,"Chargers D/ST","LAC","DST","NORMAL","ADD",2025-10-12,1,0,1,1,10
+"178",11,"Brenners Semicolon ",3050478,"Jake Elliott","PHI","K","NORMAL","ADD",2025-11-19,1,0,1,1,10
+"179",11,"Brenners Semicolon ",3052587,"Baker Mayfield","TBB","QB","NORMAL","DRAFT",2025-09-01,10,0,1,10,12
+"180",11,"Brenners Semicolon ",4360423,"Michael Penix Jr.","ATL","QB","NORMAL","DRAFT",2025-09-01,18,0,1,18,21
+"181",11,"Brenners Semicolon ",4432577,"C.J. Stroud","HOU","QB","NORMAL","ADD",2025-09-27,1,0,1,1,10
+"182",11,"Brenners Semicolon ",3912547,"Sam Darnold","SEA","QB","NORMAL","ADD",2025-11-26,1,0,1,1,10
+"183",11,"Brenners Semicolon ",3045147,"James Conner","ARI","RB","NORMAL","DRAFT",2025-09-01,13,0,1,13,15
+"184",11,"Brenners Semicolon ",4047365,"Josh Jacobs","GBP","RB","NORMAL","DRAFT",2025-09-01,44,0,1,44,51
+"185",11,"Brenners Semicolon ",3127586,"Jeremy McNichols","WAS","RB","NORMAL","ADD",2025-10-31,1,0,1,1,10
+"186",11,"Brenners Semicolon ",4427728,"Bam Knight","ARI","RB","NORMAL","ADD",2025-11-19,1,0,1,1,10
+"187",11,"Brenners Semicolon ",3051876,"Evan Engram","DEN","TE","NORMAL","DRAFT",2025-09-01,8,0,1,8,10
+"188",11,"Brenners Semicolon ",4242355,"Jake Ferguson","DAL","TE","NORMAL","DRAFT",2025-09-01,4,0,1,4,10
+"189",11,"Brenners Semicolon ",4429148,"Theo Johnson","NYG","TE","NORMAL","ADD",2025-11-09,1,0,1,1,10
+"190",11,"Brenners Semicolon ",4429205,"Jordan Addison","MIN","WR","NORMAL","DRAFT",2025-09-01,10,3,0.823529411764706,12,14
+"191",11,"Brenners Semicolon ",3916433,"Jakobi Meyers","JAC","WR","NORMAL","DRAFT",2025-09-01,12,0,1,12,14
+"192",11,"Brenners Semicolon ",4431299,"Rome Odunze","CHI","WR","NORMAL","DRAFT",2025-09-01,13,0,1,13,15
+"193",11,"Brenners Semicolon ",4429025,"Quentin Johnston","LAC","WR","NORMAL","ADD",2025-09-13,1,0,1,1,10
+"194",12,"ChristianMcCalffrey",-16034,"Texans D/ST","HOU","DST","NORMAL","DRAFT",2025-09-01,5,0,1,5,10
+"195",12,"ChristianMcCalffrey",-16033,"Ravens D/ST","BAL","DST","NORMAL","DRAFT",2025-09-01,7,0,1,7,10
+"196",12,"ChristianMcCalffrey",17427,"Cairo Santos","CHI","K","NORMAL","ADD",2025-12-19,1,0,1,1,10
+"197",12,"ChristianMcCalffrey",3915511,"Joe Burrow","CIN","QB","NORMAL","DRAFT",2025-09-01,14,0,1,14,16
+"198",12,"ChristianMcCalffrey",4361741,"Brock Purdy","SFO","QB","NORMAL","DRAFT",2025-09-01,10,0,1,10,12
+"199",12,"ChristianMcCalffrey",4432762,"Shedeur Sanders","CLE","QB","NORMAL","ADD",2025-12-10,1,0,1,1,10
+"200",12,"ChristianMcCalffrey",3117251,"Christian McCaffrey","SFO","RB","NORMAL","DRAFT",2025-09-01,53,0,1,53,61
+"201",12,"ChristianMcCalffrey",4569987,"Jaylen Warren","PIT","RB","NORMAL","DRAFT",2025-09-01,11,0,1,11,13
+"202",12,"ChristianMcCalffrey",4361579,"Javonte Williams","DAL","RB","NORMAL","DRAFT",2025-09-01,5,0,1,5,10
+"203",12,"ChristianMcCalffrey",4240657,"Michael Carter","ARI","RB","NORMAL","ADD",2025-12-19,1,0,1,1,10
+"204",12,"ChristianMcCalffrey",4385690,"Dalton Kincaid","BUF","TE","NORMAL","DRAFT",2025-09-01,2,0,1,2,10
+"205",12,"ChristianMcCalffrey",3929645,"Juwan Johnson","NOS","TE","NORMAL","ADD",2025-09-10,5,0,1,5,10
+"206",12,"ChristianMcCalffrey",4426515,"Puka Nacua","LAR","WR","NORMAL","DRAFT",2025-09-01,23,0,1,23,26
+"207",12,"ChristianMcCalffrey",4569618,"Garrett Wilson","NYJ","WR","NORMAL","DRAFT",2025-09-01,14,0,1,14,16
+"208",12,"ChristianMcCalffrey",4372016,"Jaylen Waddle","DEN","WR","NORMAL","DRAFT",2025-09-01,14,0,1,14,16
+"209",12,"ChristianMcCalffrey",4431280,"Troy Franklin","DEN","WR","NORMAL","ADD",2025-09-18,4,0,1,4,10
+"210",12,"ChristianMcCalffrey",4360761,"Michael Wilson","ARI","WR","NORMAL","ADD",2025-11-14,1,0,1,1,10

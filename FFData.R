@@ -4,8 +4,10 @@ library(nflfastR)
 library(tidyverse)
 library(ggrepel)
 
+
+
 ###Load play by play data
-seasons<- 2023
+seasons<- 2023:24
   pbp<- nflfastR::load_pbp(seasons)
 pbp<- read.csv("pbp_history.csv")%>%
   filter(season==seasons)
@@ -521,3 +523,5 @@ ggplot(fftoppts, aes(y=pts_tot,x=position, group=position))+
 ggplot(fftoppts, aes(y=pts_std_tot,x=position, group=position))+
   geom_point(aes(col=position))+
   scale_y_continuous(limits=c(100,600))
+
+

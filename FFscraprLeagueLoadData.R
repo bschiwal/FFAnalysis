@@ -12,11 +12,54 @@ require(tidyverse)
 
 #Store Connection values for multiple leagues
 witty<- espn_connect(
-  season=2024,
+  season=2025,
   league_id = 680444613,
   espn_s2 = Sys.getenv("TAN_ESPN_S2"),
   swid = Sys.getenv("TAN_SWID")
 )
+
+## Set Manual Trade Flag and add Manual Trade Variables
+
+has_manual_trades <- FALSE
+has_susp_or_injury <- TRUE 
+
+# ##For certain trades with more than one player on each side or where all players on both sides are grouped
+## of the transaction we need to manually define which players values align
+if (has_manual_trades) {
+  trade_manual_id <- c(
+    4035538, #David Montgomery
+    3123076, #David Njoku
+    4432665, #Brock Bowers
+    3046779  #Jared Goff
+  )
+  trade_manual_index <- c(1,1,1,1)
+  trade_manual <- data.frame(trade_manual_index, trade_manual_id)
+  rm(trade_manual_id, trade_manual_index)
+} else {
+  trade_manual <- data.frame(trade_manual_index = integer(), 
+                             trade_manual_id = integer())
+}
+
+
+###Get list of Suspended Players (for later calculation of keepr values)
+
+if(has_susp_or_injury) {
+susp_players<-espn_players(witty)%>%
+  filter(
+    (str_detect(player_name,"Aiyuk")& team=="SFO") |
+      ( str_detect(player_name,"Rice") & team=="KCC") |
+      ( str_detect(player_name,"Mixon") & team=="HOU") |
+      ( str_detect(player_name,"Addison") & team=="MIN")
+  )%>%
+  mutate(suspension= case_when(team=="MIN" ~ 3,
+                               team=="SFO" ~ 6,
+                               team=="KCC" ~ 6,
+                               team=="HOU" ~ 4)  
+      )
+  }else {
+  susp_players <- data.frame(player_id = integer(),
+                             suspension = integer())
+  }
 
 #office test league
 # office<- espn_connect(
@@ -29,22 +72,6 @@ witty<- espn_connect(
 
 ##Set which league connection to pull data from
 league<-witty
-
-###Get list of Suspended Players (for later calculation of keepr values)
-
-
-susp_players<-espn_players(witty)%>%
-  filter(
-    (str_detect(player_name,"Hockenson")& team=="MIN") |
-    ( str_detect(player_name,"Miller") & team=="NOS") |
-      ( str_detect(player_name,"Chubb") & team=="CLE") |
-      ( str_detect(player_name,"Brooks") & team=="CAR")
-  )%>%
-  mutate(suspension= case_when(team=="MIN" ~ 6,
-                               team=="NOS" ~ 6,
-                               team=="CLE" ~ 4,
-                               team=="CAR" ~ 6)
-  )
 
 
 #Get general League info
@@ -108,24 +135,6 @@ master_trans<-
 # ##Get Trade List
  trades_master<- master_trans%>%
    filter(type=="TRADE"|is.na(type)==TRUE)
- 
-
-# ##For certain trades with more than one player on each side or where all players on both sides are grouped
- ## of the transaction we need to manually define which players values align
-# 
-# 
-
- trade_manual_id<- c(
-   4035538, #David Montgomery
-   3123076, #David Njoku
-   4432665, #Brock Bowers 
-   3046779  #Jared Goff
-   
- )
- trade_manual_index<-c(1,1,1,1)
- trade_manual<-data.frame(trade_manual_index,trade_manual_id)
-    
- rm(trade_manual_id,trade_manual_index)
 
 # ###To get the base value of traded players, we first need to get the values of players before the traded transaction
 # ##for now I am doing this by filtering the master transaction dataset to drop all trade and 'dropped' line items and then take the max transactiond date
@@ -159,14 +168,10 @@ master_trans<-
    ungroup(trade_id)%>%
    select(-c(trade_id,counter))%>%
    left_join(trade_manual,by=c("player_id_given"="trade_manual_id"))%>%
+   mutate(trade_manual_index = coalesce(trade_manual_index, 1L)) %>% 
  left_join(trade_value%>%
                select(player_id,franchise_id,player_value),
-             by=c("player_id_given"="player_id","franchise_id"="franchise_id"))  %>%
- mutate(
-     player_value = case_when(player_id_given=="3916430"& trans_date=="2022-11-02" ~ as.integer(4),
-                                          TRUE ~ player_value),
-    trade_manual_index = case_when(player_id_given=="3916430"& trans_date=="2022-11-02" ~ 1,
-                                  TRUE ~trade_manual_index))
+             by=c("player_id_given"="player_id","franchise_id"="franchise_id"))
  
 # 
 # ##Create a frame with all the players a team gave up and add grouping index to align player values
@@ -178,24 +183,24 @@ master_trans<-
    group_by(trade_id)%>%
    mutate(counter=row_number(trade_id))%>%
    ungroup(trade_id)%>%
-   select(-c(trade_id,franchise_name,trade_partner,counter))%>%
+   select(-c(trade_id,franchise_name,trade_partner,counter)) %>%
     left_join(trade_manual,by=c("player_id_recieved"="trade_manual_id"))%>%
-    mutate( trade_manual_index = case_when(player_id_recieved=="3916430"& trans_date=="2022-11-02" ~ 1,
-                                           TRUE ~trade_manual_index))
- 
+   mutate(trade_manual_index = coalesce(trade_manual_index, 1L))
+
  ##Players without a defined index receive an index of 1
  trade_given[is.na(trade_given)] <- 1
  trade_recieved[is.na(trade_recieved)] <- 1
  
  ##Join Given and Received frames
- trade<- left_join(
-   trade_recieved,trade_given,
-                   by=c("franchise_id"="franchise_id", "trans_date"="trans_date"
-                        ,"trade_manual_index"
-                        ))
+ trade <- left_join(
+   trade_recieved, trade_given,
+   by=c("franchise_id"="franchise_id", "trans_date"="trans_date")
+ ) %>%
+   mutate(trade_manual_index = coalesce(trade_manual_index.x, trade_manual_index.y)) %>%
+   select(-trade_manual_index.x, -trade_manual_index.y)
  
- ###This section accounts for trades where each side of the group index has an uneven amount of players
- 
+##This section accounts for trades where each side of the group index has an uneven amount of players
+
  ##First look group the given side of the transaction and split player amount by number of players received when given player is duplicated
   trade_uneven_given<- trade%>%
    group_by(franchise_id,player_id_given,trade_manual_index,trans_date)%>%
