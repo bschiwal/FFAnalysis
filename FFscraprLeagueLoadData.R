@@ -9,10 +9,11 @@ require(tidyverse)
 
 ##Connect to ESPN account, S2 and SWID values are stored in R environment, 
 #used process from https://ffscrapr.ffverse.com/articles/espn_authentication.html
+season<-2025
 
 #Store Connection values for multiple leagues
 witty<- espn_connect(
-  season=2025,
+  season=season,
   league_id = 680444613,
   espn_s2 = Sys.getenv("TAN_ESPN_S2"),
   swid = Sys.getenv("TAN_SWID")
@@ -256,7 +257,7 @@ roster_final<-union_all(roster_drafted,roster_waiver)%>%
 roster<-roster_final
 
 ###clear environment except roster, trade, and suspension data
-rm(list=setdiff(ls(),c("roster","franchise", "trades_master","susp_players")))
+rm(list=setdiff(ls(),c("roster","franchise", "trades_master","susp_players","season")))
 }
 
 
@@ -277,7 +278,7 @@ roster<-roster%>%
   select(-c(eligible_pos,acquisition_date))
 
 ## Write data to CSV file 
-write.csv(roster, file="data/keepervalues2024.csv", row.names=TRUE)
+write.csv(roster, file=paste0("data/keepervalues", season, ".csv"), row.names=TRUE)
 
 
 ##Final Keeper Values
@@ -287,5 +288,5 @@ finalkeeper<-roster%>%
   left_join((franchise%>% #Add suspension to player roster
                select(franchise_id,user_first)),
             by="franchise_id")
-write.csv(finalkeeper, file="data/finalkeepervalues2024.csv", row.names=TRUE)
+write.csv(finalkeeper, file=paste0("data/finalkeepervalues", season, ".csv"), row.names=TRUE)
 
